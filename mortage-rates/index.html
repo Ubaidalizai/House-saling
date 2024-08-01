@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortage rates</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- ----------chart.js link -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <!-- box icon -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav style="overflow-y: scroll">
+        <div class="text-btn">
+          <button class="Signup-btn button button-text btn-text-nav" id="open">
+            Sign up or Log in
+          </button>
+          <button class="close-nav">X</button>
+        </div>
+        <ul>
+          <li>
+            <div class="buyimg" id="buyimg">
+              <button>buy</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <input type="button" value="Buy" /> -->
+            <ul class="buy-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="../Homes for Sale/index.html">Homes for sale</a></li>
+              <li><a href="#">Open Houses</a></li>
+              <li><a href="#">New Homes</a></li>
+              <li><a href="#">Recently Sold</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="rentimg-btn-nav" id="rentimg-btn-nav">
+              <button class="listshow-btn">Rent</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Rent</button> -->
+            <ul class="rent-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="#">All Rentals</a></li>
+              <li><a href="#">Apartments for Rent</a></li>
+              <li><a href="#">Houses for Rent</a></li>
+              <li><a href="#">Post A Rental Listing</a></li>
+            </ul>
+          </li>
+          <li>
+            <div id="mortgageimg" class="mortgageimg">
+              <button class="listshow-btn">Mortgage</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Mortgage</button> -->
+            <ul class="mortgage-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li>
+                <a href="../mortage section/index.html">Mortgage Overview</a>
+              </li>
+              <li><a href="../local lender/index.html">Get Per-Qualified</a></li>
+              <li><a href="../mortage-rates/index.html">Mortgage Rates</a></li>
+              <li><a href="#">Refinance Rates</a></li>
+              <li>
+                <a href="../mortage calculator/index.html">Mortgage Calculator</a>
+              </li>
+              <li>
+                <a href="../affortiblity calculater/index.html"
+                  >Affordability Calculator</a
+                >
+              </li>
+              <li>
+                <a href="../refinance calculator/index.html"
+                  >Refinance Calculator</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="localimg" id="localimg">
+              <button class="listshow-btn">Local Info</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Local Info</button> -->
+            <ul class="local-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="#">All Trulia Neighborhood Guides</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="additional-img" id="additional-img">
+              <button class="listshow-btn">Additional Resouces</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <ul class="additional-ul">
+              <li>
+                <a href="#">Trulia Blogs</a>
+              </li>
+              <li><a href="#">Help Center</a></li>
+              <li>
+                <a href="#">For Professionals</a>
+              </li>
+              <li><a href="#">Get Leads by ZIP</a></li>
+              <li><a href="#">Get Mortgage Leads</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="d-block"><span>trulia</span></div>
+          <div class="contents-container">
+            <div class="contents">
+              <ul>
+                <li class="list-show p-hover" id="btn-show">
+                  <a href="#" class="nav-button">Buy</a>
+                  <ul class="buy-contents">
+                    <li><span>San Francisco</span></li>
+  
+                    <li>
+                      <a href="../Homes for Sale/index.html">Homes for sales</a>
+                    </li>
+                    <li><a href="#">Open Houses</a></li>
+                    <li><a href="#">New Homes</a></li>
+                    <li><a href="#">Recently Sold</a></li>
+                    <li>
+                      <hr />
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-show1">
+                  <a href="#" class="nav-button1">Rent</a>
+                  <ul class="buy-contents1">
+                    <li><span>San Francisco</span></li>
+                    <li><a href="#">All Rentals</a></li>
+                    <li><a href="#">Apartments for Rent</a></li>
+                    <li><a href="#">Houses for Rent</a></li>
+                    <li>
+                      <span> <hr /></span>
+                    </li>
+                    <li><a href="#">Post A Rental Listing</a></li>
+                  </ul>
+                </li>
+                <li class="list-show2">
+                  <a href="#" class="nav-button2">Mortgage</a>
+                  <ul class="buy-contents2">
+                    <li><span>San Francisco</span></li>
+  
+                    <li>
+                      <a href="../mortage section/index.html">Mortgage Overview</a>
+                    </li>
+                    <li>
+                      <a href="../local lender/index.html">Get Pre-Qualified</a>
+                    </li>
+                    <li>
+                      <a href="../mortage-rates/index.html">Mortgage Rates</a>
+                    </li>
+                    <li>
+                      <a href="../Refinance Rates/index.html">Refinance Rates</a>
+                    </li>
+                    <li>
+                      <span> <hr /></span>
+                    </li>
+                    <li>
+                      <a href="../mortage calculator/index.html"
+                        >Mortgage Calculator
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../affortiblity calculater/index.html"
+                        >Affordability Calculator</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../refinance calculator/index.html"
+                        >Refinance Calculator</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents2">
+              <ul>
+                <li>
+                  <button class="button button-text btn-text-hide" id="open3">
+                    Saved Homes
+                  </button>
+                </li>
+                <li>
+                  <button class="button button-text btn-text-hide" id="open2">
+                    Saved Search
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="Signup-btn button button-text btn-text-hide"
+                    id="open1"
+                  >
+                    Sign up or Log in
+                  </button>
+                </li>
+  
+                <li>
+                  <!-- <button><i class="fa fa-bars fa-2x"></i></button> -->
+                  <button class="button-text" id="toggle">
+                    <img
+                      class="svgIcon"
+                      src="../img/menu_24dp_007882_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="menu"
+                      style="fill: #007882"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <div class="signup-loginbtn">
+                <h3>Sign up or Log in</h3>
+                <button id="signup-loginbtn-close">X</button>
+              </div>
+              <form class="modal-form">
+                <div class="emails">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter email address "
+                  />
+                </div>
+  
+                <div class="submitbtn">
+                  <button type="submit">Submit</button>
+                </div>
+                <div class="login-line"><span></span> OR <span></span></div>
+                <div class="contact-withus">
+                  <div class="facebook">
+                    <img src="../img/Facebook_logo_36x36.png" alt="Facebook" /><a
+                      href="#"
+                      >contenuie with Facebook</a
+                    >
+                  </div>
+                  <div class="google">
+                    <a href="#">google ورود به سیستم با </a
+                    ><img src="../img/google-icon.svg" alt="google" />
+                  </div>
+                  <div class="loging-agree">
+                    <input type="checkbox" name="" id="" />
+                    <p>
+                      I accept Trulia's <a href="#">Terms of Use</a> and
+                      <a href="#">Privacy Policy</a>.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <button id="toggle" class="toggle">
+          <i class="fa fa-bars fa-2x"></i>
+        </button> -->
+          </div>
+        </div>
+      </header>
+  
+    <div class="home">
+        <div class="image">
+        <img src="./images/MortgageRates.svg">
+    </div>
+    <div class="home-input">
+        <div class="title">
+            <h1>Find Mortgage Rates in Aurora, CO</h1>
+            <h5>Interest rates are totally personal. Enter your info to see what mortgage rates you may qualify for.</h5>
+        </div>
+    </div>
+    </div>
+    <!-- -----------------end of home page part--------------- -->
+      <!-- -------------start of rateing part ----- -->
+       <!-- generall container -->
+      <div class="generall-container">
+        <!-- generall container -->
+      <div class="rateing">
+        <div class="purcahs-button">
+            <button>Purchase</button>
+            <button>Refinance</button>
+        </div>
+        <div class="purchas-form">
+            <div class="purchase-inputs">
+
+             <div class="purchase-input">
+                 <label for="Zip Code">Zip Code</label>
+                <input type="number" value="94105">
+            </div>
+            <div class="purchase-input">
+                <label for="Purchase Price">Purchase Price</label>
+                <input type="number" value="200,000">
+                </div>
+            <div class="purchase-input">
+                <label for="Down Payment">Down Payment</label>
+                <input type="number" value="40,000">
+          </div>
+          <div class="purchase-input">
+                <label for="Credit Score">Credit Score</label>
+                <select id="credit-score" name="credit-score">
+                    <option value="">760+</option>
+                    <option value="300">300</option>
+                    <option value="320">320</option>
+                    <option value="340">340</option>
+                    <option value="360">360</option>
+                    <option value="380">380</option>
+                    <option value="400">400</option>
+                    <option value="420">420</option>
+                    <option value="440">440</option>
+                    <option value="460">460</option>
+                    <option value="480">480</option>
+                    <option value="500">500</option>
+                    <option value="520">520</option>
+                    <option value="540">540</option>
+                    <option value="560">560</option>
+                    <option value="580">580</option>
+                    <option value="600">600</option>
+                    <option value="620">620</option>
+                    <option value="640">640</option>
+                    <option value="660">660</option>
+                    <option value="680">680</option>
+                    <option value="700">700</option>
+                    <option value="720">720</option>
+                    <option value="740">740</option>
+                    <option value="760">760</option>
+                  </select>
+                </div>
+            </div>
+            <div class="chech-box">
+                <input type="checkbox">
+                <h4>Served in the U.S. Military</h4>
+            </div>
+            <div class="rate-button"><button>See Rates</button></div>
+        </div>
+    </div>
+    <!-- ------------end of rating part--------- -->
+
+    <div class="rate-graph">
+        <h2>Mortgage Rate Trends</h2>
+      
+            <div class="graph">
+                <canvas id="interestRatesChart"></canvas>
+            </div>
+      </div>
+      <!-- -----------end of rating graph--------- -->
+
+      <!-- ------------mortage rate help part-------------- -->
+       <div class="rate-help-container">
+        <h2>Mortgage Rate Help</h2>
+        <h5>Looking for current mortgage rates in San Francisco, CA? Here’s how to use our mortgage rate tool to find competitive interest rates.</h5>
+        <div class="rate-help-cards">
+            <div class="rate-help-card">
+             <h3>Loan purpose</h3>
+             <div class="rate-headers"></div>
+                <p>You can search for today’s interest rates for purchasing a home or for refinance mortgage rates.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>Zip code</h3>
+                <div class="rate-headers"></div>
+                <p>Enter your ZIP code for the most accurate mortgage rate results. Interest rates can vary from state to state.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>Purchase price</h3>
+                <div class="rate-headers"></div>
+                <p>This helps calculate the loan‑to‑value ratio for your loan, which helps determine your interest rate.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>Down payment</h3>
+                <div class="rate-headers"></div>
+                <p>This amount will also affect your interest rates. Most home loans require a down payment of at least 3%.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>Credit score</h3>
+                <div class="rate-headers"></div>
+                <p>Also known as a FICO score, a higher credit score will help you qualify for a lower mortgage rate.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>VA Loans</h3>
+                <div class="rate-headers"></div>
+                <p>Looking for a VA loan? Check the “Military/Veteran” above to get current mortgage rates for VA loans.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>FHA loans</h3>
+                <div class="rate-headers"></div>
+                <p>Our mortgage rate tool automatically includes FHA loans. You can filter results to only show FHA loans.</p>
+            </div>
+
+            <div class="rate-help-card">
+                <h3>Advanced options</h3>
+                <div class="rate-headers"></div>
+                <p>Use the advanced options to add details like income and debts for an even more accurate rate quote..</p>
+            </div>
+
+
+        </div>
+       </div>
+       <!-- -----------mortage rate help part end------------ -->
+
+       <!-- --------mortge resource part start---------------- -->
+       <div class="tool">
+        <h2>Try our helpful mortgage tools</h2>
+        <h5>Overwhelmed by mortgages? Don’t sweat it. Here are some tools to help make it a little easier.</h5>
+        <div class="tools-image">
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortage resource.svg"></div>
+                <h3>Get Pre-Qualified</h3>
+                <p>Find out how much you can borrow by getting pre-approved by a local lender.</p>
+                <div class="tool-button btn1"><button>Affordability Calculator</button></div>
+            </div>
+            <!-- second image -->
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/Mortgage resource2.svg"></div>
+                <h3>30-year Fixed Rates</h3>
+                <p>Get personalized home loan quotes on Trulia with current CA 30-year fixed mortgage rates.</p>
+                <div class="tool-button btn2"><button>Affordability Calculator</button></div>
+            </div>
+            <!-- third image -->
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortage resource3.svg"></div>
+                <h3>15-Year Fixed Rates</h3>
+                <p>See current CA 15-year fixed mortgage rates and get personalized 15-year fixed rate quotes.</p>
+                <div class="tool-button btn3"><button>Affordability Calculator</button></div>
+            </div>
+            <!-- end of image -->
+             <!-- fourth image -->
+             <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortage resource4.svg"></div>
+                <h3>Mortgage calculator</h3>
+                <p>Estimate your monthly mortgage payments for your home loan or refinance.</p>
+                <div class="tool-button btn4"><button>Affordability Calculator</button></div>
+            </div>
+              <!-- fourth image end -->
+        </div>
+     </div>
+        <!-- -------mortage resource part entd---------------- -->
+
+        <!-- --------code for shop rate---------------------- ----------->
+         <div class="shop-container">
+            <h2>Why Shop for Mortgage Rates on Trulia?</h2>
+            <p>Mortgage rates can change daily, and we'll help you keep track of the latest San Francisco, CA rates. Use our mortgage rate tool to compare mortgage quotes with current rates from our participating mortgage lenders in San Francisco, CA. We'll help you find competitive CA mortgage rates for your home loan.</p>
+
+            <div class="shop-cards">
+                <div class="shop-card">
+                <h3>Compare and Save</h3>
+                <div class="rate-headers"></div>
+                <h5>It pays to shop around for mortgage rates. That’s why we make it easy for you to compare current San Francisco, CA rates from multiple lenders. Plus you’ll save time by finding them all in one place.</h5>
+            </div>
+
+            <div class="shop-card">
+                <h3>You’re in Control</h3>
+                <div class="rate-headers"></div>
+                <h5>No obligations. No pressure. No phone calls until you’re ready. On Trulia, you can search for current mortgage rates anonymously and you decide when to contact lenders.</h5>
+            </div>
+
+            <div class="shop-card">
+                <h3>Read Lender Reviews</h3>
+                <div class="rate-headers"></div>
+                <h5>You want a low mortgage rate and great service too. We have hundreds of thousands of customer reviews that may help you find a mortgage lender that you’re comfortable working with.</h5>
+            </div>
+
+            
+            </div>
+         </div>
+           <!-- --------end of code for shop rate---------------------- -->
+
+            <!-- -------------footer section of this project---------------------- -->
+        <div class="footer-container">
+        <div class="footer-links-cards">
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Real Estate Markets</a></h3>
+                <ul>
+                    <li><a href="#"> Alaska Real Estate</a></li>
+                    <li><a href="#">Alabama Real Estate</a></li>
+                    <li><a href="#">Arkansas Real Estate</a></li>
+                    <li><a href="#">Arizona Real Estate</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                 <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                </div>
+                <div class="hide-link">
+                    <ul>
+                       <li><a href="#">California Real Estate</a></li>  
+                        <li><a href="#"> Colorado Real Estate</a></li>
+                        <li><a href="#"> Connecticut Real Estate</a></li>
+                        <li><a href="#"> District Of Columbia Real Estate</a></li>
+                        <li><a href="#"> Delaware Real Estate</a></li>
+                        <li><a href="#"> Florida Real Estate</a></li>
+                        <li><a href="#"> Georgia Real Estate</a></li>
+                        <li><a href="#"> Hawaii Real Estate</a></li>
+                        <li><a href="#"> Iowa Real Estate</a></li>
+                        <li><a href="#"> Idaho Real Estate</a></li>
+                        <li><a href="#"> Illinois Real Estate</a></li>
+                        <li><a href="#"> Indiana Real Estate</a></li>
+                        <li><a href="#"> Kansas Real Estate</a></li>
+                        <li><a href="#"> Kentucky Real Estate</a></li>
+                        <li><a href="#"> Louisiana Real Estate</a></li>
+                        <li><a href="#"> Massachusetts Real Estate</a></li>
+                        <li><a href="#"> Maryland Real Estate</a></li>
+                        <li><a href="#"> Maine Real Estate</a></li>
+                        <li><a href="#"> Michigan Real Estate</a></li>
+                        <li><a href="#"> Minnesota Real Estate</a></li>
+                        <li><a href="#"> Missouri Real Estate
+                        <li><a href="#"> Mississippi Real Estate</a></li>
+                        <li><a href="#"> Montana Real Estate</a></li>
+                        <li><a href="#"> North Carolina Real Estate</a></li>
+                        <li><a href="#"> North Dakota Real Estate</a></li>
+                        <li><a href="#"> Nebraska Real Estate</a></li>
+                        <li><a href="#"> New Hampshire Real Estate</a></li>
+                        <li><a href="#"> New Jersey Real Estate</a></li>
+                        <li><a href="#"> New Mexico Real Estate</a></li>
+                        <li><a href="#"> Nevada Real Estate</a></li>
+                        <li><a href="#"> New York Real Estate</a></li>
+                        <li><a href="#"> Ohio Real Estate</a></li>
+                        <li><a href="#"> Oklahoma Real Estate</a></li>
+                        <li><a href="#"> Oregon Real Estate</a></li>
+                        <li><a href="#"> Pennsylvania Real Estate</a></li>
+                        <li><a href="#"> Rhode Island Real Estate</a></li>
+                        <li><a href="#"> South Carolina Real Estate</a></li>
+                        <li><a href="#"> South Dakota Real Estate</a></li>
+                        <li><a href="#"> Tennessee Real Estate</a></li>
+                        <li><a href="#"> Texas Real Estate</a></li>
+                        <li><a href="#"> Utah Real Estate</a></li>
+                        <li><a href="#"> Virginia Real Estate</a></li>
+                        <li><a href="#"> Vermont Real Estate</a></li>
+                        <li><a href="#"> Washington Real Estate</a></li>
+                        <li><a href="#"> Wisconsin Real Estate</a></li>
+                        <li><a href="#"> West Virginia Real Estate</a></li>
+                        <li><a href="#"> Wyoming Real Estate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Rental Markets</a></h3>
+                <ul>
+                    <li><a href="#"> Alaska Rentals</a></li>
+                    <li><a href="#">Alabama Rentals</a></li>
+                    <li><a href="#">Arkansas Rentals</a></li>
+                    <li><a href="#">Arizona Rentals</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                </div>
+                <div class="hide-link">
+                    <ul>
+                     <li><a href="#"> California Rentals</a></li>
+                     <li><a href="#"> Colorado Rentals</a></li>
+                     <li><a href="#"> Connecticut Rentals</a></li>
+                     <li><a href="#"> District Of Columbia Rentals</a></li>
+                     <li><a href="#"> Delaware Rentals</a></li>
+                     <li><a href="#"> Florida Rentals</a></li>
+                     <li><a href="#"> Georgia Rentals</a></li>
+                     <li><a href="#"> Hawaii Rentals</a></li>
+                     <li><a href="#"> Iowa Rentals</a></li>
+                     <li><a href="#"> Idaho Rentals</a></li>
+                     <li><a href="#"> Illinois Rentals</a></li>
+                     <li><a href="#"> Indiana Rentals</a></li>
+                     <li><a href="#"> Kansas Rentals</a></li>
+                     <li><a href="#"> Kentucky Rentals</a></li>
+                     <li><a href="#"> Louisiana Rentals</a></li>
+                     <li><a href="#"> Massachusetts Rentals</a></li>
+                     <li><a href="#"> Maryland Rentals</a></li>
+                     <li><a href="#"> Maine Rentals</a></li>
+                     <li><a href="#"> Michigan Rentals
+                     <li><a href="#"> Minnesota Rentals</a></li>
+                     <li><a href="#"> Missouri Rentals</a></li>
+                     <li><a href="#"> Mississippi Rentals</a></li>
+                     <li><a href="#"> Montana Rentals</a></li>
+                     <li><a href="#"> North Carolina Rentals</a></li>
+                     <li><a href="#"> North Dakota Rentals</a></li>
+                     <li><a href="#"> Nebraska Rentals</a></li>
+                     <li><a href="#"> New Hampshire Rentals</a></li>
+                     <li><a href="#"> New Jersey Rentals</a></li>
+                     <li><a href="#"> New Mexico Rentals</a></li>
+                     <li><a href="#"> Nevada Rentals</a></li>
+                     <li><a href="#"> New York Rentals</a></li>
+                     <li><a href="#"> Ohio Rentals</a></li>
+                     <li><a href="#"> Oklahoma Rentals</a></li>
+                     <li><a href="#"> Oregon Rentals</a></li>
+                     <li><a href="#"> Pennsylvania Rentals</a></li>
+                     <li><a href="#"> Rhode Island Rentals</a></li>
+                     <li><a href="#"> South Carolina Rentals</a></li>
+                     <li><a href="#"> South Dakota Rentals</a></li>
+                     <li><a href="#"> Tennessee Rentals</a></li>
+                     <li><a href="#"> Texas Rentals</a></li>
+                     <li><a href="#"> Utah Rentals</a></li>
+                     <li><a href="#"> Virginia Rentals</a></li>
+                     <li><a href="#"> Vermont Rentals</a></li>
+                     <li><a href="#"> Washington Rentals</a></li>
+                     <li><a href="#"> Wisconsin Rentals</a></li>
+                     <li><a href="#"> West Virginia Rentals</a></li>
+                     <li><a href="#"> Wyoming Rentals</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Explore Trulia</a></h3>
+                <ul>
+                    <li><i class='bx bxl-facebook-circle'></i><a href="#"> Alaska Real Estate</a></li>
+                    <li><i class='bx bxl-twitter' ></i><a href="#">Alabama Real Estate</a></li>
+                    <li><i class='bx bxl-instagram' ></i><a href="#">Arkansas Real Estate</a></li>
+                    <li><i class='bx bxl-pinterest' ></i><a href="#">Arizona Real Estate</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                 <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+            </div>
+            <div class="hide-link">
+                <ul>
+                     <li><a href="#">Trulia Estimates</a></li>               
+                    <li><a href="#"> Community Sitemap</a></li>
+                    <li><a href="#"> Trulia Sitemap</a></li>
+                    <li><a href="#"> All Real Estate Markets</a></li>
+                    <li><a href="#"> All Rental Markets</a></li>
+
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">For Professionals</a></h3>
+                <ul>
+                    <li><a href="#">Popular Counties</a></li>
+                    <li><a href="#">Rental Communities</a></li>
+                    <li><a href="#">Real Estate Leads</a></li>
+                </ul>
+                </div>
+            </div>
+          </div>
+
+
+          <!-- -----------------final description------------------- -->
+          <div class="footer-descreption">
+            <h5>Trulia is a registered Trademark of Zillow, Inc. Zillow, Inc. holds real estate brokerage <a href="#">licenses</a> in all 50 states and D.C. and Zillow (Canada) Inc. holds real estate brokerage <a href="#">licenses</a> in multiple provinces.</h5>
+            <a href="#">§ 442-H New York Standard Operating Procedures</a><br>
+            <a href="#">New York Fair Housing Notice</a>
+            <h5>TREC: <a href="#">Information about brokerage services, Consumer protection notice</a>
+             <br> California DRE #1522444</h5>
+             <a href="#">Contact Zillow, Inc Brokerage</a>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="#">About Zillow Group&colon;</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Fair Housing Guide</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Careers</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Newsroom</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Investor Relations</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Advertising Terms</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Privacy</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Terms of Use</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Listings Quality Policy</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Subscription Terms</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Help</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Privacy Portal</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Cookie Preferenc</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Do Not Sell or Share My Personal Information </a></li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </ul>
+        </div>
+        <div class="footer-zillow">
+            <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities.  We are continuously working to improve the accessibility of our web experience for everyone,  and we welcome feedback and accommodation requests. If you wish to report an issue or seek an  accommodation, please <a href="#" style="color: darkgreen;">let us know</a>.</p>
+        </div>
+        <div class="footer-copy-right">
+            <p>Copyright &copy; 2024 Trulia, LLC. All rights reserved. Equal Housing Opportunity. Have a Question? Visit our Help Center to find the answer.</p>
+        </div>
+           <!-- ----------------end of final description------------ -->
+
+          
+        </div>
+     <!-- ------------end of footer section of this project--------------- -->
+
+    <!-- generall container -->
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

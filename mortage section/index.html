@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortage</title>
+    <!-- ----------chart.js link -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="overflow-y: scroll">
+        <div class="text-btn">
+          <button class="Signup-btn button button-text btn-text-nav" id="open">
+            Sign up or Log in
+          </button>
+          <button class="close-nav">X</button>
+        </div>
+        <ul>
+          <li>
+            <div class="buyimg" id="buyimg">
+              <button>buy</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <input type="button" value="Buy" /> -->
+            <ul class="buy-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="../Homes for Sale/index.html">Homes for sale</a></li>
+              <li><a href="#">Open Houses</a></li>
+              <li><a href="#">New Homes</a></li>
+              <li><a href="#">Recently Sold</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="rentimg-btn-nav" id="rentimg-btn-nav">
+              <button class="listshow-btn">Rent</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Rent</button> -->
+            <ul class="rent-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="#">All Rentals</a></li>
+              <li><a href="#">Apartments for Rent</a></li>
+              <li><a href="#">Houses for Rent</a></li>
+              <li><a href="#">Post A Rental Listing</a></li>
+            </ul>
+          </li>
+          <li>
+            <div id="mortgageimg" class="mortgageimg">
+              <button class="listshow-btn">Mortgage</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Mortgage</button> -->
+            <ul class="mortgage-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li>
+                <a href="../mortage section/index.html">Mortgage Overview</a>
+              </li>
+              <li><a href="../local lender/index.html">Get Per-Qualified</a></li>
+              <li><a href="../mortage-rates/index.html">Mortgage Rates</a></li>
+              <li><a href="../Refinance Rates/index.html">Refinance Rates</a></li>
+              <li>
+                <a href="../mortage calculator/index.html">Mortgage Calculator</a>
+              </li>
+              <li>
+                <a href="../affortiblity calculater/index.html"
+                  >Affordability Calculator</a
+                >
+              </li>
+              <li>
+                <a href="../refinance calculator/index.html"
+                  >Refinance Calculator</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="localimg" id="localimg">
+              <button class="listshow-btn">Local Info</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <!-- <button>Local Info</button> -->
+            <ul class="local-ul">
+              <li>
+                <div><span>San Francisco</span></div>
+              </li>
+              <li><a href="#">All Trulia Neighborhood Guides</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="additional-img" id="additional-img">
+              <button class="listshow-btn">Additional Resouces</button>
+              <img src="../img/keyboard arrow1.svg" alt="" />
+            </div>
+            <ul class="additional-ul">
+              <li>
+                <a href="#">Trulia Blogs</a>
+              </li>
+              <li><a href="#">Help Center</a></li>
+              <li>
+                <a href="#">For Professionals</a>
+              </li>
+              <li><a href="#">Get Leads by ZIP</a></li>
+              <li><a href="#">Get Mortgage Leads</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="d-block"><span>trulia</span></div>
+          <div class="contents-container">
+            <div class="contents">
+              <ul>
+                <li class="list-show p-hover" id="btn-show">
+                  <a href="#" class="nav-button">Buy</a>
+                  <ul class="buy-contents">
+                    <li><span>San Francisco</span></li>
+  
+                    <li>
+                      <a href="../Homes for Sale/index.html">Homes for sales</a>
+                    </li>
+                    <li><a href="#">Open Houses</a></li>
+                    <li><a href="#">New Homes</a></li>
+                    <li><a href="#">Recently Sold</a></li>
+                    <li>
+                      <hr />
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-show1">
+                  <a href="#" class="nav-button1">Rent</a>
+                  <ul class="buy-contents1">
+                    <li><span>San Francisco</span></li>
+                    <li><a href="#">All Rentals</a></li>
+                    <li><a href="#">Apartments for Rent</a></li>
+                    <li><a href="#">Houses for Rent</a></li>
+                    <li>
+                      <span> <hr /></span>
+                    </li>
+                    <li><a href="#">Post A Rental Listing</a></li>
+                  </ul>
+                </li>
+                <li class="list-show2">
+                  <a href="#" class="nav-button2">Mortgage</a>
+                  <ul class="buy-contents2">
+                    <li><span>San Francisco</span></li>
+  
+                    <li>
+                      <a href="../mortage section/index.html">Mortgage Overview</a>
+                    </li>
+                    <li>
+                      <a href="../local lender/index.html">Get Pre-Qualified</a>
+                    </li>
+                    <li>
+                      <a href="../mortage-rates/index.html">Mortgage Rates</a>
+                    </li>
+                    <li>
+                      <a href="../Refinance Rates/index.html">Refinance Rates</a>
+                    </li>
+                    <li>
+                      <span> <hr /></span>
+                    </li>
+                    <li>
+                      <a href="../mortage calculator/index.html"
+                        >Mortgage Calculator
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../affortiblity calculater/index.html"
+                        >Affordability Calculator</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../refinance calculator/index.html"
+                        >Refinance Calculator</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contents2">
+              <ul>
+                <li>
+                  <button class="button button-text btn-text-hide" id="open3">
+                    Saved Homes
+                  </button>
+                </li>
+                <li>
+                  <button class="button button-text btn-text-hide" id="open2">
+                    Saved Search
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="Signup-btn button button-text btn-text-hide"
+                    id="open1"
+                  >
+                    Sign up or Log in
+                  </button>
+                </li>
+  
+                <li>
+                  <!-- <button><i class="fa fa-bars fa-2x"></i></button> -->
+                  <button class="button-text" id="toggle">
+                    <img
+                      class="svgIcon"
+                      src="../img/menu_24dp_007882_FILL0_wght400_GRAD0_opsz24.svg"
+                      alt="menu"
+                      style="fill: #007882"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <div class="signup-loginbtn">
+                <h3>Sign up or Log in</h3>
+                <button id="signup-loginbtn-close">X</button>
+              </div>
+              <form class="modal-form">
+                <div class="emails">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter email address "
+                  />
+                </div>
+  
+                <div class="submitbtn">
+                  <button type="submit">Submit</button>
+                </div>
+                <div class="login-line"><span></span> OR <span></span></div>
+                <div class="contact-withus">
+                  <div class="facebook">
+                    <img src="../img/Facebook_logo_36x36.png" alt="Facebook" /><a
+                      href="#"
+                      >contenuie with Facebook</a
+                    >
+                  </div>
+                  <div class="google">
+                    <a href="#">google ورود به سیستم با </a
+                    ><img src="../img/google-icon.svg" alt="google" />
+                  </div>
+                  <div class="loging-agree">
+                    <input type="checkbox" name="" id="" />
+                    <p>
+                      I accept Trulia's <a href="#">Terms of Use</a> and
+                      <a href="#">Privacy Policy</a>.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <button id="toggle" class="toggle">
+          <i class="fa fa-bars fa-2x"></i>
+        </button> -->
+          </div>
+        </div>
+      </header>
+  
+    <div class="home">
+        <div class="image">
+        <img src="./images/mortage.svg">
+    </div>
+    <div class="home-input">
+        <div class="title">
+            <h1>Looking for a mortgage? Let Trulia be your guide.</h1>
+            <h5>Take the first step and get pre-qualified.</h5>
+        </div>
+        <div class="input-button">
+            <input type="number" value="94105">
+            <button>Get-Pre-Qulifide</button>
+        </div>
+    </div>
+    </div>
+    <!-- -------tools part is start--- -->
+     <div class="tools">
+        <div class="tool">
+        <h2>Try our helpful mortgage tools</h2>
+        <h5>Overwhelmed by mortgages? Don’t sweat it. Here are some tools to help make it a little easier.</h5>
+        <div class="tools-image">
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortae1.svg"></div>
+                <button>Affordability Calculator</button>
+            </div>
+            <!-- second image -->
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortage2.svg"></div>
+                <button>Affordability Calculator</button>
+            </div>
+            <!-- third image -->
+            <div class="tool-image">
+                <div class="tool-img"> <img src="./images/mortage3.svg"></div>
+                <button>Affordability Calculator</button>
+            </div>
+            <!-- end of image -->
+        </div>
+     </div>
+
+     <!-- -----------------new section is start----- -->
+      <div class="options">
+        <h2>Discover your loan options</h2>
+        <h5>Here’s a look at some common mortgage types to help you see which loan is right for you.</h5>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Loan type</th>
+                    <th>Best for</th>
+                    <th>Current avg.APR</th>
+                    <th>Min. down payment*</th>
+                    <th>More details</th>
+                </tr>
+
+                <tr>
+                    <td>30-Year Fixed</td>
+                    <td>Low monthly payments that won’t change</td>
+                    <td>6.60%</td>
+                    <td>3.0%</td>
+                    <td>30-year fixed is the most common mortgage type</td>
+                </tr>
+                
+                <tr>
+                    <td>15-Year Fixed</td>
+                    <td>Paying loan off faster (vs 30-year loans) </td>
+                    <td>5.89%</td>
+                    <td>3.0%</td>
+                    <td>Payments are higher, but much less interest is paid over time vs 30-yr loans</td>
+                </tr>
+
+                <tr>
+                    <td>7/1 ARM</td>
+                    <td>Those who might sell within 7 years</td>
+                    <td>7.30%</td>
+                    <td>3.0%</td>
+                    <td>After 7 years, interest rate & mo. payment can change annuall</td>
+                </tr>
+
+                <tr>
+                    <td>5/1 ARM</td>
+                    <td>Those who might sell within 7 years</td>
+                    <td>7.54%</td>
+                    <td>3.0%</td>
+                    <td>After 5 years, interest rate & mo. payment can change annual</td>
+                </tr>
+
+                <tr>
+                    <td>FHA 30-Year Fixed</td>
+                    <td>Those with lower credit scores</td>
+                    <td>6.29%</td>
+                    <td>3.5%</td>
+                    <td>Mortgage insurance is required (upfront fee & mo. insurance premium)</td>
+                </tr>
+
+                <tr>
+                    <td>VA 30-Year Fixed</td>
+                    <td>Qualifying veterans and active military</td>
+                    <td>6.01%</td>
+                    <td>0.0%</td>
+                    <td>PMI is not required for VA loans, but there may be a VA funding fee</td>
+                </tr>
+                
+                <tr>
+                    <td>Jumbo 30-Year Fixed</td>
+                    <td>Those purchasing high-priced homes</td>
+                    <td>0.00%</td>
+                    <td>Varies</td>
+                    <td>Jumbo loans are for loan amounts that exceed conventional loan limits</td>
+                </tr>
+            </table>
+            <p>* Actual minimum required down payment may vary depending on criteria established by the lender, investor or insurer of your loan. 
+                See rate disclosures</p>
+        </div>
+        <!-- start of hide data -->
+        <div class="hide-address">
+            <!-- --------------------------new hide data-------------- -->
+          <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;"> 30-Year Fixed</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+              </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Low monthly payments that won’t change</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>6.60%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>3.0%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>30-year fixed is the most common mortgage type</h4>
+                  </div>
+              </div>
+          </div>
+          
+           <!-- --------------------------new hid data-------------- -->
+           <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;">15-Year Fixed</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+                </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Paying loan off faster (vs 30-year loans)</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>5.89%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>3.0%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>Payments are higher, but much less interest is paid over time vs 30-yr loans</h4>
+                  </div>
+              </div>
+          </div>
+          <!-- --------------------------new hid data-------------- -->
+          <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;"> 7/1 ARM</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+                </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Those who might sell within 7 years</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>7.30%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>3.0%</h4>>
+                  </div>
+                  <div class="h3-span">
+                      <h4>After 7 years, interest rate & mo. payment can change annuall</h4>
+                  </div>
+              </div>
+          </div>
+          <!-- --------------------------new hid data-------------- -->
+          <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;"> 5/1 ARM</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+              </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Those who might sell within 7 years</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>Bed</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>7.54%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>After 5 years, interest rate & mo. payment can change annual</h4>
+                  </div>
+              </div>
+          </div>
+          <!-- --------------------------new hid data-------------- -->
+          <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;">FHA 30-Year Fixed</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+                </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Those with lower credit scores</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>6.29%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>3.5%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>Mortgage insurance is required (upfront fee & mo. insurance premium)</h4>
+                  </div>
+              </div>
+          </div>
+           <!-- --------------------------new hid data-------------- -->
+           <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;">VA 30-Year Fixed</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+              </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Qualifying veterans and active military</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>6.01%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>0.0%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>PMI is not required for VA loans, but there may be a VA funding fee</h4>
+                  </div>
+              </div>
+          </div>
+          <!-- --------------------------new hid data-------------- -->
+          <div class="addres-click">
+              <div class="hide-txt-btn">
+                  <a href="#" style="color: green;">Jumbo 30-Year Fixed</a>
+                  <span> 
+                      <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                      <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                  </span>
+              </div>
+              <div class="hid-add-data">
+                  <div class="h3-span">
+                      <h4>Those purchasing high-priced homes</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>0.00%</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>varia</h4>
+                  </div>
+                  <div class="h3-span">
+                      <h4>Jumbo loans are for loan amounts that exceed conventional loan limits</h4>
+                  </div>
+              </div>
+          </div>
+          
+              <!-- --------------------------new hid data-------------- -->
+        </div>
+        <!-- end of hide data -->
+      </div>
+      <!-- ----------------end of this section -------->
+    <!-- start of new part ---------------- -->
+     <!-- end of the part -->
+      <div class="topic">
+        <h2>Read popular mortgage topics</h2>
+        <h5>Read the latest mortgage topics and be in-the-know before you buy your next home.</h5>
+        <div class="topic-info">
+            <div class="topic-image">
+                <div class="topic-img-back">
+                    <img src="./images/MortgageTopic.svg">
+                </div>
+                <h2>How to build and improve your credit</h2>
+            </div>
+            <div class="topic-explin">
+                <div class="link"><a href="#">How much house can you really afford?</a></div>
+                <div class="link"><a href="#">How to get a loan with bad credit</a></div>
+                <div class="link"><a href="#">Tax benefits of home ownership</a></div>
+                <div class="link"><a href="#">4 VA loan myths that hurt buyers and sellers</a></div>
+            </div>
+        </div>
+      </div>
+      <!-- end of this section -->
+       <!-- -------------start of rateing part ----- -->
+        <div class="rateing">
+            <h2>Get rates for your unique scenario</h2>
+            <h5>Mortgage rates are totally personal. Enter your details to find out what rates may be available for your scenario.
+
+            </h5>
+            <div class="purcahs-button">
+                <button>Purchase</button>
+                <button>Refinance</button>
+            </div>
+            <div class="purchas-form">
+                <div class="purchase-inputs">
+
+                 <div class="purchase-input">
+                     <label for="Zip Code">Zip Code</label>
+                    <input type="number" value="94105">
+                </div>
+                <div class="purchase-input">
+                    <label for="Purchase Price">Purchase Price</label>
+                    <input type="number" value="200,000">
+                    </div>
+                <div class="purchase-input">
+                    <label for="Down Payment">Down Payment</label>
+                    <input type="number" value="40,000">
+              </div>
+              <div class="purchase-input">
+                    <label for="Credit Score">Credit Score</label>
+                    <select id="credit-score" name="credit-score">
+                        <option value="">760+</option>
+                        <option value="300">300</option>
+                        <option value="320">320</option>
+                        <option value="340">340</option>
+                        <option value="360">360</option>
+                        <option value="380">380</option>
+                        <option value="400">400</option>
+                        <option value="420">420</option>
+                        <option value="440">440</option>
+                        <option value="460">460</option>
+                        <option value="480">480</option>
+                        <option value="500">500</option>
+                        <option value="520">520</option>
+                        <option value="540">540</option>
+                        <option value="560">560</option>
+                        <option value="580">580</option>
+                        <option value="600">600</option>
+                        <option value="620">620</option>
+                        <option value="640">640</option>
+                        <option value="660">660</option>
+                        <option value="680">680</option>
+                        <option value="700">700</option>
+                        <option value="720">720</option>
+                        <option value="740">740</option>
+                        <option value="760">760</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="chech-box">
+                    <input type="checkbox">
+                    <h4>Served in the U.S. Military</h4>
+                </div>
+                <div class="rate-button"><button>See Rates</button></div>
+            </div>
+        </div>
+        <!-- ------------end of rating part--------- -->
+         <!-- -------------start of rating graph----- -->
+          <div class="rate-graph">
+            <h2>See today’s national average interest rates</h2>
+            <h5>Mortgage rates can change daily. Checkout the average rate trends over the last year.</h5>
+                <div class="graph">
+                    <canvas id="interestRatesChart"></canvas>
+                </div>
+          </div>
+          <!-- -----------end of rating graph--------- -->
+           <!-- ----------------part of most asking----- -->
+            <div class="mortage-question">
+                <h2>Most-asked mortgage questions</h2>
+                <div class="question">
+                  
+                     <div class="click">
+                        <div class="up-down-container">
+                        <h4>How much do you need to put down on a house?</h4>
+                        <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                    </div>
+                        <div class="hide-data">
+                            <h4>How much you put down depends on your goals and the type of loan you choose. Different loan types have different requirements. For example, an FHA loan requires at least 3.5% down, while a conventional loan requires at least 3%. Homeowners typically put down 10%, but 20% is often seen as ideal. Regardless of your loan type, there are clear advantages for putting more money down: it can lower your monthly payment, help you qualify for a better interest rate, and potentially help you avoid paying private mortgage insurance (PMI). Learn more about down payments.</h4>
+                        </div>
+                     </div>
+                   
+                <div class="click">
+                    <div class="up-down-container">
+                    <h4>How do I choose a mortgage lender?</h4>
+                     <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                        </div>
+                    <div class="hide-data">
+                        <h4>When you need a mortgage it’s best to shop around and talk to at least three lenders to compare rates and explore different loan programs to find the right one for you. We offer a quick and easy way to find a lender in your area or compare rates from multiple lenders.
+                        </h4>
+                    </div>
+                    
+                </div> 
+                <div class="click">
+                    <div class="up-down-container">
+                    <h4>How much mortgage can I afford?</h4>
+                     <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                        </div>
+                    <div class="hide-data">
+                        <h4>To determine how much house you can afford, you can follow the 28/36 rule. This rule of thumb states that up to 28% of your monthly income should be spent on total housing expenses, and up to 36% should be spend on total debts, including your mortgage and other loans like car payments or student loans. You can also try our affordability calculator to estimate your mortgage affordability.</h4>
+                    </div>
+                    
+                </div>
+                <div class="click">
+                    <div class="up-down-container">
+                    <h4>What is mortgage pre-qualification?</h4>
+                     <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                        </div>
+                    <div class="hide-data">
+                        <h4>Getting pre-qualified is the first step in the mortgage process. It’s an initial assessment by a lender that states how much mortgage you may qualify for. You simply provide information about your income, debts and assets. It can give you a good idea of how much you can afford to spend on your home, and can show sellers that you’re a serious and credible buyer.</h4>
+                    </div>
+                    
+                </div>
+                <div class="click">
+                    <div class="up-down-container">
+                    <h4>How do I qualify to buy a home?</h4>
+                     <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                        <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                        </div>
+                    <div class="hide-data">
+                        <h4>Lenders look at a number of factors when determining whether you qualify for a mortgage, including credit score, income, debts, and down payment amount. To see if you’ll qualify for a loan, you can speak with a local lender.</h4>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+            <!-- ---------------end of most asking------ -->
+    </div>
+    <!-- -------------get start part --------------- -->
+<div class="get-start">
+    <div class="get-container">
+        <div class="get-title">
+        <h2>Get help from a local lender</h2>
+        <p>Quickly find a local lender who can help you buy your next home. Simply tell us about you loan requirements and the home you want to buy.</p>
+    </div> 
+        <div class="get-input-button">
+            <input type="number" value="94105">
+            <button>Get Started</button>
+        </div>
+    </div>
+   </div>
+   <!-- -------------end of this part------------- -->
+    <!-- -------------footer section of this project---------------------- -->
+     <div class="footer">
+        <div class="footer-container">
+        <div class="footer-links-cards">
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Real Estate Markets</a></h3>
+                <ul>
+                    <li><a href="#"> Alaska Real Estate</a></li>
+                    <li><a href="#">Alabama Real Estate</a></li>
+                    <li><a href="#">Arkansas Real Estate</a></li>
+                    <li><a href="#">Arizona Real Estate</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                 <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                </div>
+                <div class="hide-link">
+                    <ul>
+                       <li><a href="#">California Real Estate</a></li>  
+                        <li><a href="#"> Colorado Real Estate</a></li>
+                        <li><a href="#"> Connecticut Real Estate</a></li>
+                        <li><a href="#"> District Of Columbia Real Estate</a></li>
+                        <li><a href="#"> Delaware Real Estate</a></li>
+                        <li><a href="#"> Florida Real Estate</a></li>
+                        <li><a href="#"> Georgia Real Estate</a></li>
+                        <li><a href="#"> Hawaii Real Estate</a></li>
+                        <li><a href="#"> Iowa Real Estate</a></li>
+                        <li><a href="#"> Idaho Real Estate</a></li>
+                        <li><a href="#"> Illinois Real Estate</a></li>
+                        <li><a href="#"> Indiana Real Estate</a></li>
+                        <li><a href="#"> Kansas Real Estate</a></li>
+                        <li><a href="#"> Kentucky Real Estate</a></li>
+                        <li><a href="#"> Louisiana Real Estate</a></li>
+                        <li><a href="#"> Massachusetts Real Estate</a></li>
+                        <li><a href="#"> Maryland Real Estate</a></li>
+                        <li><a href="#"> Maine Real Estate</a></li>
+                        <li><a href="#"> Michigan Real Estate</a></li>
+                        <li><a href="#"> Minnesota Real Estate</a></li>
+                        <li><a href="#"> Missouri Real Estate
+                        <li><a href="#"> Mississippi Real Estate</a></li>
+                        <li><a href="#"> Montana Real Estate</a></li>
+                        <li><a href="#"> North Carolina Real Estate</a></li>
+                        <li><a href="#"> North Dakota Real Estate</a></li>
+                        <li><a href="#"> Nebraska Real Estate</a></li>
+                        <li><a href="#"> New Hampshire Real Estate</a></li>
+                        <li><a href="#"> New Jersey Real Estate</a></li>
+                        <li><a href="#"> New Mexico Real Estate</a></li>
+                        <li><a href="#"> Nevada Real Estate</a></li>
+                        <li><a href="#"> New York Real Estate</a></li>
+                        <li><a href="#"> Ohio Real Estate</a></li>
+                        <li><a href="#"> Oklahoma Real Estate</a></li>
+                        <li><a href="#"> Oregon Real Estate</a></li>
+                        <li><a href="#"> Pennsylvania Real Estate</a></li>
+                        <li><a href="#"> Rhode Island Real Estate</a></li>
+                        <li><a href="#"> South Carolina Real Estate</a></li>
+                        <li><a href="#"> South Dakota Real Estate</a></li>
+                        <li><a href="#"> Tennessee Real Estate</a></li>
+                        <li><a href="#"> Texas Real Estate</a></li>
+                        <li><a href="#"> Utah Real Estate</a></li>
+                        <li><a href="#"> Virginia Real Estate</a></li>
+                        <li><a href="#"> Vermont Real Estate</a></li>
+                        <li><a href="#"> Washington Real Estate</a></li>
+                        <li><a href="#"> Wisconsin Real Estate</a></li>
+                        <li><a href="#"> West Virginia Real Estate</a></li>
+                        <li><a href="#"> Wyoming Real Estate</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Rental Markets</a></h3>
+                <ul>
+                    <li><a href="#"> Alaska Rentals</a></li>
+                    <li><a href="#">Alabama Rentals</a></li>
+                    <li><a href="#">Arkansas Rentals</a></li>
+                    <li><a href="#">Arizona Rentals</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+                </div>
+                <div class="hide-link">
+                    <ul>
+                     <li><a href="#"> California Rentals</a></li>
+                     <li><a href="#"> Colorado Rentals</a></li>
+                     <li><a href="#"> Connecticut Rentals</a></li>
+                     <li><a href="#"> District Of Columbia Rentals</a></li>
+                     <li><a href="#"> Delaware Rentals</a></li>
+                     <li><a href="#"> Florida Rentals</a></li>
+                     <li><a href="#"> Georgia Rentals</a></li>
+                     <li><a href="#"> Hawaii Rentals</a></li>
+                     <li><a href="#"> Iowa Rentals</a></li>
+                     <li><a href="#"> Idaho Rentals</a></li>
+                     <li><a href="#"> Illinois Rentals</a></li>
+                     <li><a href="#"> Indiana Rentals</a></li>
+                     <li><a href="#"> Kansas Rentals</a></li>
+                     <li><a href="#"> Kentucky Rentals</a></li>
+                     <li><a href="#"> Louisiana Rentals</a></li>
+                     <li><a href="#"> Massachusetts Rentals</a></li>
+                     <li><a href="#"> Maryland Rentals</a></li>
+                     <li><a href="#"> Maine Rentals</a></li>
+                     <li><a href="#"> Michigan Rentals
+                     <li><a href="#"> Minnesota Rentals</a></li>
+                     <li><a href="#"> Missouri Rentals</a></li>
+                     <li><a href="#"> Mississippi Rentals</a></li>
+                     <li><a href="#"> Montana Rentals</a></li>
+                     <li><a href="#"> North Carolina Rentals</a></li>
+                     <li><a href="#"> North Dakota Rentals</a></li>
+                     <li><a href="#"> Nebraska Rentals</a></li>
+                     <li><a href="#"> New Hampshire Rentals</a></li>
+                     <li><a href="#"> New Jersey Rentals</a></li>
+                     <li><a href="#"> New Mexico Rentals</a></li>
+                     <li><a href="#"> Nevada Rentals</a></li>
+                     <li><a href="#"> New York Rentals</a></li>
+                     <li><a href="#"> Ohio Rentals</a></li>
+                     <li><a href="#"> Oklahoma Rentals</a></li>
+                     <li><a href="#"> Oregon Rentals</a></li>
+                     <li><a href="#"> Pennsylvania Rentals</a></li>
+                     <li><a href="#"> Rhode Island Rentals</a></li>
+                     <li><a href="#"> South Carolina Rentals</a></li>
+                     <li><a href="#"> South Dakota Rentals</a></li>
+                     <li><a href="#"> Tennessee Rentals</a></li>
+                     <li><a href="#"> Texas Rentals</a></li>
+                     <li><a href="#"> Utah Rentals</a></li>
+                     <li><a href="#"> Virginia Rentals</a></li>
+                     <li><a href="#"> Vermont Rentals</a></li>
+                     <li><a href="#"> Washington Rentals</a></li>
+                     <li><a href="#"> Wisconsin Rentals</a></li>
+                     <li><a href="#"> West Virginia Rentals</a></li>
+                     <li><a href="#"> Wyoming Rentals</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">Explore Trulia</a></h3>
+                <ul>
+                    <li><i class='bx bxl-facebook-circle'></i><a href="#"> Alaska Real Estate</a></li>
+                    <li><i class='bx bxl-twitter' ></i><a href="#">Alabama Real Estate</a></li>
+                    <li><i class='bx bxl-instagram' ></i><a href="#">Arkansas Real Estate</a></li>
+                    <li><i class='bx bxl-pinterest' ></i><a href="#">Arizona Real Estate</a></li>
+                </ul>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"/></svg>
+                 <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"/></svg>
+            </div>
+            <div class="hide-link">
+                <ul>
+                     <li><a href="#">Trulia Estimates</a></li>               
+                    <li><a href="#"> Community Sitemap</a></li>
+                    <li><a href="#"> Trulia Sitemap</a></li>
+                    <li><a href="#"> All Real Estate Markets</a></li>
+                    <li><a href="#"> All Rental Markets</a></li>
+
+                </ul>
+            </div>
+
+            </div>
+
+            <div class="footer-link-card">
+                <div class="footer-link-content">
+                <h3><a href="#">For Professionals</a></h3>
+                <ul>
+                    <li><a href="#">Popular Counties</a></li>
+                    <li><a href="#">Rental Communities</a></li>
+                    <li><a href="#">Real Estate Leads</a></li>
+                </ul>
+                </div>
+            </div>
+          </div>
+
+
+          <!-- -----------------final description------------------- -->
+          <div class="footer-descreption">
+            <h5>Trulia is a registered Trademark of Zillow, Inc. Zillow, Inc. holds real estate brokerage <a href="#">licenses</a> in all 50 states and D.C. and Zillow (Canada) Inc. holds real estate brokerage <a href="#">licenses</a> in multiple provinces.</h5>
+            <a href="#">§ 442-H New York Standard Operating Procedures</a><br>
+            <a href="#">New York Fair Housing Notice</a>
+            <h5>TREC: <a href="#">Information about brokerage services, Consumer protection notice</a>
+             <br> California DRE #1522444</h5>
+             <a href="#">Contact Zillow, Inc Brokerage</a>
+        </div>
+        <div class="footer-list">
+            <ul>
+                <li><a href="#">About Zillow Group&colon;</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Fair Housing Guide</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Careers</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Newsroom</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Investor Relations</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Advertising Terms</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Privacy</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Terms of Use</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Listings Quality Policy</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Subscription Terms</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Help</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Privacy Portal</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Cookie Preferenc</a></li>
+                <div class="footer-circl"></div>
+                <li><a href="#">Do Not Sell or Share My Personal Information </a></li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </ul>
+        </div>
+        <div class="footer-zillow">
+            <p>Zillow Group is committed to ensuring digital accessibility for individuals with disabilities.  We are continuously working to improve the accessibility of our web experience for everyone,  and we welcome feedback and accommodation requests. If you wish to report an issue or seek an  accommodation, please <a href="#" style="color: darkgreen;">let us know</a>.</p>
+        </div>
+        <div class="footer-copy-right">
+            <p>Copyright &copy; 2024 Trulia, LLC. All rights reserved. Equal Housing Opportunity. Have a Question? Visit our Help Center to find the answer.</p>
+        </div>
+           <!-- ----------------end of final description------------ -->
+
+          
+        </div>
+     </div>
+     <!-- ------------end of footer section of this project--------------- -->
+    <script src="script.js"></script>
+</body>
+</html>
