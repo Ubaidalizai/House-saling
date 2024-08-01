@@ -1,0 +1,913 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.new{
+    width: 100%;
+    height: 100%; 
+   padding:30px 7rem ;
+ 
+    /* border: 1px solid red; */
+   
+}
+.head{
+    margin:20px 0px;
+    display: flex;
+}
+.button{
+    padding: 10px;
+    color: green;
+    text-decoration: none;
+}
+.button:hover{
+    text-decoration: underline;
+}
+.icons{
+    padding: 10px;
+}
+.icons a{
+    color: green;
+}
+/* ----------------------style for image class---------- */
+.backround {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.backround img{
+    border-radius: 10px;
+    width: 900px;
+    height: 330px;
+    transition: scale 0.3s ease;
+    
+}
+.backround img:hover{
+ scale: 1.03;
+}
+/* ------------------------style of layouts -------------------- */
+.layouts{
+ display: flex;
+    /* border: 1px solid green; */
+}
+/* ---------------------------------------------------------------------- */
+.genarall{
+    display: flex;
+    /* border: 1px solid green; */
+}
+.collect{
+    margin-right: 10px;
+}
+.layout{
+    padding: 10px;
+    /* border: 1px solid red; */
+    height: 150px;
+    width: 300px;
+    text-align: center;
+}
+.layout h4{
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+.layout h5{
+    font-size: 0.9rem;
+    word-spacing: 0.5rem;
+    line-height:2rem;
+}
+.genarall .cards{
+    display:flex;
+    flex-direction: column;
+    /* border: 1px solid aqua; */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow:10px 10px 30px rgb(162, 154, 154);
+    width: 300px;
+    height: 500px;
+    /* overflow: hidden; */
+
+}
+.card{
+  padding: 15px;
+}
+.cards .input{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(88, 96, 96);
+    padding: 10px;
+}
+.input:hover{
+    border: 3px solid rgb(27, 153, 153);
+}
+  
+  .inputs .input,
+  .inputs textarea {
+    outline: none;
+  }
+  
+  .inputs .input:focus-within,
+  .inputs textarea:focus-within {
+    border: 1px solid rgb(27, 153, 153);
+  }
+  /*------------------------------ code for place holder---------------------------------- */
+  .input-container {
+    position: relative;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .input:focus + label,
+  #user-message:focus + label,
+  .input:not(:placeholder-shown) + label,
+  #user-message:not(:placeholder-shown) + label {
+    top: 0.8rem;
+    left: 1.3rem;
+    transform: translateY(0);
+    font-size: 0.8rem;
+    color: #333;
+  }
+  
+  .input::placeholder,
+  #user-message::placeholder {
+    color: transparent;
+  }
+  
+  .input:focus::placeholder,
+  #user-message:focus::placeholder {
+    color: #999;
+  }
+   /*------------------------------code for place holder---------------------------------- */
+#user-message{
+    width: 250px;
+    height: 70px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    resize: none;
+}
+#user-message:hover{
+    border: 3px solid rgb(27, 153, 153);
+}
+.inputs{
+    /* padding: 10px; */
+    text-align: center;
+    /* border: 1px solid red; */
+    height:auto;
+}
+.btn{
+    padding: 10px;
+     width: 250px; 
+     cursor: pointer;
+     /* margin: 0px 20px; */
+     border-radius: 10px;
+     background-color: red;
+     border: none;
+}
+.btn:hover{
+    background-color: #fff;
+    border: 1px solid red;
+}
+.description{
+    margin-top: 10px;
+}
+.description label{
+    font-size: 0.8rem;
+}
+.description p{
+    font-size:0.8rem;
+    margin-top: 20px;
+}
+.goomap{
+    width: 100%;
+    height: 400px;
+}
+.btns{
+    padding: 15px;
+   
+
+}
+.btns .bttn{
+    /* background-color: red; */
+    background-color: transparent;
+    width: 6rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.bttn:hover{
+    background-color: rgb(229, 236, 239);
+}
+.goomap h3{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+#map{
+ width:100%;
+  height: 200px;
+  border-radius: 10px;
+  background-position: center;
+  /* margin-top: 20px; */
+}
+
+/* -----------code for describ div------------------ */
+.describ{
+ /* border: 1px solid red; */
+ margin-top: 10px;
+ padding: 10px;
+}
+.describ h2{
+    margin-bottom: 10px;
+}
+.higlights{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    border: 1px solid #bdb7b7;
+    border-radius: 10px;
+}
+.higlights h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.mods{
+    display: flex;
+    height: 150px;
+    padding: 20px;
+    /* border: 1px solid yellow; */
+}
+.mode{
+    /* border: 1px solid black; */
+    width: 200px;
+    margin: 0px;
+  padding: 20px;
+}
+.mode h5{
+    line-height: 2rem;
+    font-size: 1rem;
+    color: #6e6767;
+}
+.mode img{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+.end{
+    margin: 15px 0px;
+}
+.cartons{
+    border: 1px solid rgb(127, 121, 121);
+    width: 100%;
+    height: 330px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+ .intair{
+    border-bottom: 1px solid rgb(127, 121, 121);
+    height: 3rem;
+    padding: 15px 0px 0px 10px;
+    background-color: #ececec;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+.intair-detail{
+    border-bottom: 1px solid rgb(127, 121, 121);
+    padding: 15px;
+    height: 100px;
+    /* display: flex; */
+}
+.intair-detail h4{
+    padding: 10px;
+}
+.intair-detail ul{
+    display: flex;
+    /* justify-content: space-evenly; */;
+}
+.intair-detail ul li{
+    margin:0px 2rem;
+}
+.intair-bed{
+    border-bottom: 1px solid rgb(127, 121, 121);
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+}
+.intair-bed h4{
+    padding: 10px;
+}
+.intair-bed ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.intair-bed ul li{
+    margin-left: 10px;
+}
+.daimension h4{
+    padding: 10px;
+}
+.see-all{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid rgb(162, 154, 154);
+    background-color: #fff;
+}
+.see-all:hover{
+    background-color: #e2dcdc;
+    border: none;
+}
+.content{
+    line-height: 25px;
+    color: #777373;
+}
+.history{
+margin-top: 10px;
+}
+.history h2{
+    padding: 10px;
+}
+
+ .history table{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+th{
+    background-color: #efe9e9;
+    /* width: 100%; */
+}
+th,td{
+    border-bottom: 1px solid #6e6767;
+    text-align: left;
+    padding: 10px;
+}
+/* -----------------------------------swiper code------------------- */
+
+.swiper h2{
+    font-size:1.8rem;
+    padding: 10px;
+}
+.swiper{
+    margin-top: 10px;
+    max-width: 100%;
+     height:auto;
+     /* background-color: rgb(249, 246, 246); */
+     overflow: hidden;
+ 
+ }
+ /* .swiper h1{
+     text-align: center;
+     padding: 30px;
+     padding-bottom: 0;
+     font-size:2.8rem;
+ } */
+ .swiper-wrapper
+ {
+     display: flex;
+     margin: 20px 20px 20px 20px;
+     height:300px;
+     /* border: 1px solid red; */
+     
+ }
+ .swiper-wrapper .card{
+     padding: 20px; 
+     height: 30rem;
+     /* border: 1px solid black; */
+ }
+ .card .image{
+    object-fit: cover;
+    /* border: 1px solid aqua; */
+    height: auto;
+    margin-bottom: 10px;
+   
+ }
+ .image img{
+     width: 13rem;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 10px;
+     transition: transform 0.3s ease-in;
+ }
+ .image img:hover{
+     transform: scale(1.03);
+ }
+ .card h4{
+     font-size: 1.5rem;
+     margin-bottom: 15px;
+ }
+ .card h5{
+     font-size: 1rem;
+     color:rgb(89, 93, 94);
+     margin-bottom: 10px;
+     line-height: 1.3rem;
+ }
+ .card h6{
+     font-size: 0.5rem;
+     color:rgb(89, 93, 94);
+    
+ }
+ /* ---------------new code for table after slider---------------- */
+ .taxe{
+    margin-bottom: 15px;
+ }
+ .taxe h3{
+    padding: 10px;
+    font-size: 1.5rem;
+ }
+.taxe table{
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+.taxe h5{
+    font-size: 15px;
+    margin-top: 2rem;
+    color: #777373;
+}
+.price-tend{
+    margin: 10px;
+    padding: 10px;
+}
+.price-tend p{
+    margin-left: 10px;
+    line-height: 20px;
+}
+.price-image {
+    width: 18px;
+    height: 18px;
+  }
+  .comparable{
+    margin-top:3rem;
+   
+  }
+  #map-container{
+    width: 100%;
+    height: 400px;
+     margin-top: 20px;
+     margin-bottom: 2rem;
+    
+  }
+  #map-container iframe{
+    border-radius: 10px;
+  }
+  table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    height: 500px;
+  }
+  /* --------------------------------------naigbor house code----------------------- */
+  .Neighborhood{
+    margin-top:3rem;
+  }
+ .Neighborhood .swiper-slide{
+display: flex;
+ }
+ .Neighborhood .image{
+    margin-right: 10px;
+ }
+ .Neighborhood .image img{
+    width: 150px;
+ }
+ .Neighborhood a{
+    text-decoration: none;
+ }
+ /* --------------------------------------------cose for loacal asking that what they say- */
+ .locals{
+    width: 100%;
+    height:auto;
+    background-color: #f7f7f7;
+    padding:2rem 1rem;
+    margin-top: 20px;
+    border-radius: 10px;
+ }
+ .locals h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+ }
+ /* -------------------code for local asking part----- */
+ .mySwiper{
+    max-width: 100%;
+     height:auto;
+     overflow: hidden;
+     /* border: 1px solid red; */
+ 
+ }
+  .mySwiper .swiper-wrapper
+ {
+    /* border: 1px solid red; */
+    height: 21rem;
+    margin-top: 0;
+    margin-left: 0;
+    text-align: center;
+    /* justify-content: center;
+    align-items: center; */
+     /* display: flex; */
+     /* margin: 20px 20px 20px 20px; */
+     /* width: 300px; */
+     /* height:400px; */
+     
+ } 
+ .swiper-slide{
+    width: 100%;
+    height: 200px;
+    margin-left: 1rem;
+    /* padding: 0.5rem; */
+ }
+ .swiper-slide .items{
+    width: 200px;
+    height:20rem;
+    padding:1rem;
+    border-radius: 10px;
+    background-color: rgb(0, 139, 139);
+ }
+ .next{
+    display: flex;
+    padding: 10px 10px;
+ }
+ .next h5{
+    margin-left: 10px;
+    color: #FFF;
+ }
+ .items img{
+    width: 33px;
+    height: 33px;
+    background-color: white;
+    border-radius: 50%;
+ }
+ .items .text{
+    margin-top: 10px;
+ }
+ .text h3{
+    line-height: 1.5rem;
+    color: #FFF;
+ }
+ /* ------------------------------------------------------new code is starting------------------- */
+ .local-legal{
+    margin-top: 1.8rem;
+ }
+ .part1{
+    display: flex;
+    justify-content: space-between;
+ }
+ .part1 h2{
+    margin-bottom:1rem;
+ }
+ .part1 h5{
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+ }
+ .part1 .sprit{
+    margin-top: 1rem;
+ }
+ .photo{
+    /* border: 1px solid red; */
+    margin-right: 3rem;
+ }
+ .housings{
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-top: 2rem;
+
+ }
+ .housing{
+    /* border: 1px solid red; */
+    height: 13rem;
+    width:19rem;
+    padding: 0.8rem;
+    /* display: flex; */
+  
+ }
+ .gender{
+    border: 1px solid gray;
+    width: 15rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    display: flex;
+    padding:5px;
+    border-radius: 5px;
+    margin-bottom:0.3rem;
+    background-color: #ececec;
+ }
+ .orintation{
+    border: 1px solid gray;
+    width: 15rem;
+    height: 1.5rem;
+    justify-content: space-between;
+    display: flex;
+    padding:5px;
+    border-radius: 5px;
+    background-color: #ececec;
+ }
+ .housing .small-text{
+    margin-top: 1.3rem;
+    line-height: 1.2rem;
+ }
+
+ /* ------------------------------code for chart section-------------- */
+ .month-payment h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+ }
+ canvas {
+    max-width: 600px;
+    max-height: 600px;
+    width: 30rem;
+    height: 15rem;
+  }
+  .input-fiald {
+    width:100%;
+    border: 1px solid #ccc; 
+     padding: 10px; 
+     height: 230px;
+     border-radius: 4px;
+     margin-top: 2rem;
+  
+   }
+ .input-fiald input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+padding: 10px;
+border: 1px solid #ccc;
+background-color: #e1dede;
+width: 100%; 
+}
+
+  .input-fiald label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .chart{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+}
+.chart .payment{
+    padding: 3rem;
+    /* display: flex; */
+}
+.chart .payment p{
+   line-height: 2rem;
+  
+}
+.monthly-pay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.monthly-pay .circles{
+    margin-right: 1rem;
+}
+.payment .qulifaid{
+    padding: 1rem;
+    width:20rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(0, 100, 92, 0.961);
+    border: none;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.qulifaid:hover{
+    background-color: #fff;
+    color:  rgba(0, 100, 92, 0.961);
+    border:  1px solid  rgba(0, 100, 92, 0.961);
+}
+.payment .circles{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-color: yellow;
+}
+.coll{
+    display: flex;
+    align-items: center;
+}
+.intrest{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.releted{
+margin-top: 2rem;
+}
+
+/* --------------code for new section contact agent------------------------ */
+.contact .buttons{
+padding: 0.5rem;
+width: 10rem;
+margin: 2rem 0 1rem 0;
+border: none;
+background-color: #fff;
+color: darkgreen;
+
+}
+.buttons:hover{
+    border: 1px solid gainsboro;
+    border-radius: 0.5rem;
+}
+.collection{
+    border: 1px solid rgb(215, 217, 219);
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.collated{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.photto{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 28rem;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(238, 190, 101);
+    position: relative;
+    border-radius: 1rem;
+}
+.photto img{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    border-radius: 10px;
+}
+.photto h1{
+    position: absolute;
+    top: 70%;
+    color: rgba(0, 0, 255, 0.473);
+
+}
+.schedul{
+    margin-left: 10px;
+    /* border: 1px solid red; */
+    width:35rem;
+    height: auto;
+    padding: 1rem;
+}
+.schedul-button{
+    display: flex;
+    margin-top: 1rem;
+    /* width: 100%; */
+}.schedul-button .in-button{
+    width:100%;
+    padding: 0.3rem;
+    border-radius: 5PX;
+    border: none;
+    margin-right: 5PX;
+}
+.days{
+    display: flex;
+    margin-top: 1rem;
+}
+.days .day{
+    border: 1px solid gainsboro;
+    width:5rem;
+    height: 5rem;
+  border-radius: 1rem;
+    text-align: center;
+    margin-right: 5PX;
+}
+.day:hover{
+    
+    background-color: #ecebeb;
+}
+.fild-of-input{
+    display:flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.fild-of-input input{
+    width: 100%;
+    border-radius:5px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin: 1rem 0 1rem 0;
+}
+.chack{
+    display: flex;
+}
+.chack p{
+    margin-left: 5px;
+}
+.qulifaid{
+    padding: 0.7rem;
+    width:20rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.qulifaid:hover{
+    background-color: #fff;
+    color:  orangered;
+    border:  1px solid orangered;
+}
+.paragraph{
+    /* border: 1px solid yellow; */
+    width: 100%;
+}
+/* ----------------------------for final part codding----------------- */
+.listing{
+    margin-top: 1.8rem;
+    margin-bottom: 5rem;
+}
+.listing h2{
+    margin-bottom: 1.8rem;
+}
+.inforom{
+    /* margin-top: 3rem; */
+}
+.real-estat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+margin-top: 5rem;
+}
+.real-estat h2{
+    margin-bottom: 1rem;
+}
+.real-estat .gouid{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 10rem;
+    width: 15rem;
+    margin-bottom: 5px;
+}
+.real-estat .gouid a{
+    text-decoration: none;
+    color: darkgreen;
+    margin-bottom: 5px;
+}
+.real-estat .gouid a:hover{
+    text-decoration: underline;
+    color: rgb(3, 73, 3);
+}
+.inrix-link{
+    margin-bottom: 2rem;
+}
+.trulia{
+    margin-bottom: 2rem;
+}
+.trulia a{
+    color: darkgreen;
+}
+.orderd-list{
+    margin-bottom: 2rem;
+}
+.orderd-list ul{
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.orderd-list li{
+    list-style: none;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.orderd-list li a{
+    text-decoration: none;
+    color: #777373;
+}
+.orderd-list li a:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+.orderd-list .circl {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: black;   
+}
+.zillow{
+    color: #777373;
+}
+.copy-right{
+    margin-top: 2rem;
+    color: #777373;
+}
+
+

@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>New page</title>
+    <!-- ---link of chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="new">
+      <div class="container">
+        <div class="head">
+          <a href="../index.html" class="button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Search
+          </a>
+          <div class="icons">
+            For Sale
+            <i
+              class="fas fa-hand-point-right"
+              style="color: rgb(135, 128, 128)"
+            ></i>
+            <a href="#"> CO </a
+            ><i
+              class="fas fa-hand-point-right"
+              style="color: rgb(135, 128, 128)"
+            ></i
+            ><a href="#"> Aurora </a
+            ><i
+              class="fas fa-hand-point-right"
+              style="color: rgb(135, 128, 128)"
+            ></i>
+            <a href="#">80013</a
+            ><i
+              class="fas fa-hand-point-right"
+              style="color: rgb(135, 128, 128)"
+            ></i>
+            16293 E Mercer Circle
+          </div>
+        </div>
+        <div class="backround">
+          <img src="./img/backimage.jpg" alt="" />
+        </div>
+        <!-----------------------layuotes part----------------------------->
+        <div class="genarall">
+          <div class="collect">
+            <div class="layouts">
+              <div class="layout">
+                <h4>16293 E Mercer Circle</h4>
+                <h5>
+                  Aurora, CO 80013Mission Viejo <br />
+                  <ion-icon
+                    name="bed"
+                    style="color: rgb(117, 114, 114)"
+                  ></ion-icon>
+                  4Beds
+                  <ion-icon
+                    name="water"
+                    style="color: rgb(117, 114, 114)"
+                  ></ion-icon>
+                  3Baths
+
+                  <ion-icon
+                    name="square"
+                    style="color: rgb(117, 114, 114)"
+                  ></ion-icon>
+                  2,616 sqft
+                </h5>
+              </div>
+              <div class="layout">
+                <h4>$549,000</h4>
+                <h5>
+                  Est. Mortgage $3,151/mo* <br />
+                  Get Pre-Qualified
+                </h5>
+              </div>
+            </div>
+            <div class="goomap">
+              <h3>Local informatio</h3>
+              <div class="btns">
+                <button class="bttn">MAP</button>
+                <button class="bttn">Schools</button>
+                <button class="bttn">Shop &amp; Eat</button>
+              </div>
+              <div id="map"></div>
+            </div>
+          </div>
+          <!-- second dive of thsi section--------------------------------- -->
+          <div class="cards">
+            <div class="card">
+              <div class="inputs">
+                <div class="input-container">
+                  <input class="input" type="number" placeholder="Phone" />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-container">
+                  <input class="input" type="email" placeholder="Email" />
+                  <label for="email">Email</label>
+                </div>
+                <div class="input-container">
+                  <textarea id="user-message" placeholder="Your Message">
+                     your message
+                 </textarea
+                  >
+                </div>
+                <button class="btn">Request Info</button>
+              </div>
+              <div class="description">
+                <input type="checkbox" />
+                <label>I want to talk about financing</label>
+                <p>
+                  By pressing Request Info, you agree that Trulia and real
+                  estate professionals may contact you via phone/text about your
+                  inquiry, which may involve the use of automated means. You are
+                  not required to consent as a condition of purchasing any
+                  property, goods or services. Message/data rates may apply. You
+                  also agree to our Terms of Use Trulia does not endorse any
+                  real estate professionals
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="describ">
+          <h2>Description</h2>
+          <p>
+            --Seller is offering concessions to help buy down your interest rate
+            or go toward closing costs! See notes for more details-- Location,
+            location, location. This lovely home is located in the heart of
+            Mission Viejo, just a stone’s throw away from the amazing park that
+            marks the centerpiece and is a destination. So much to enjoy about
+            your new home: enjoy the perks of being on a corner lot; 4 bedrooms
+            means room for everyone, including a large primary bedroom with
+            vaulted ceiling and ensuite bathroom and walk-in closet; spacious
+            home entry has vaulted ceilings to greet your guests; dining and
+            living room; breakfast nook located in the kitchen; large family
+            room with woodburning fireplace; 2 entrances opening up to a
+            spacious backyard; finished basement with a bedroom, bonus room,
+            storage room and laundry room; oversized 2 car garage complete with
+            workbench and cabinets for storage. Curious about the upgrades?
+            Let’s start with the brand new flooring just installed with your
+            family in mind - new carpet on stairs and upper level, and new
+            laminate throughout main and lower levels; new roof 2023; all new
+            house windows 2021; house painted 2021; new interior doors 2019;
+            dishwasher and refrigerator 2023. We can’t forget to mention how
+            close and convenient you will be to a plethora of shopping and
+            dining options. This home is located in the Cherry Creek School
+            District. Why not come check it out?
+          </p>
+        </div>
+        <div class="higlights">
+          <h2>Home Highlights</h2>
+          <div class="mods">
+            <div class="mode">
+              <h5><img src="./img/parking.jpb.png" /> Parking</h5>
+              <h5><ion-icon name="home"></ion-icon> Outdoor</h5>
+              <h5><ion-icon name="thermometer"></ion-icon> A/C</h5>
+            </div>
+            <div class="mode">
+              <h5>2 Car Garage</h5>
+              <h5>Deck</h5>
+              <h5>Heating &amp; Cooling</h5>
+            </div>
+            <div class="mode">
+              <h5><ion-icon name="calculator-outline"></ion-icon> HOA</h5>
+              <h5><ion-icon name="reader-outline"></ion-icon> Price/Sqft</h5>
+              <h5>
+                <ion-icon name="file-tray-stacked-outline"></ion-icon> Listed
+              </h5>
+            </div>
+            <div class="mode">
+              <h5>$3/Monthly</h5>
+              <h5>$210</h5>
+              <h5>5 days ago</h5>
+            </div>
+          </div>
+        </div>
+        <h2 class="end">Home Details for 16293 E Mercer Circle</h2>
+        <div class="cartons">
+          <div class="intair"><h4>Interior Features</h4></div>
+          <div class="intair-detail">
+            <h4>Interior Details</h4>
+            <ul>
+              <li>Basement: Crawl Space,Finished</li>
+              <li>Number of Rooms: 13</li>
+            </ul>
+          </div>
+          <div class="intair-bed">
+            <h4>Beds &amp; Baths</h4>
+            <ul>
+              <li>Number of Bedrooms: 4</li>
+              <li>Number of Bathrooms: 3</li>
+              <li>Number of Bathrooms (full): 1</li>
+              <li>Number of Bathrooms (three quarters):</li>
+              <li>Number of Bathrooms (half): 1</li>
+            </ul>
+          </div>
+          <div class="daimension"><h4>Diminsion and Layout</h4></div>
+        </div>
+        <button class="see-all">See All</button>
+        <div class="content">
+          <h4>Last check for updates: about 5 hours ago</h4>
+          <h4>Listing courtesy of Audra Moyer, (303) 668-7299</h4>
+          <h4>The Denver 100 LLC</h4>
+          <h4>Source: REcolorado, MLS#6958524</h4>
+        </div>
+        <div class="history">
+          <h2>Price History for 16293 E Mercer Circle</h2>
+          <table class="table">
+            <tr>
+              <th>Date</th>
+              <th>Prise</th>
+              <th>Event</th>
+              <th>Source</th>
+            </tr>
+            <tr>
+              <td>07/13/2024</td>
+              <td>$549,000</td>
+              <td>Listed For Sale REcolorado</td>
+              <td>#6958524</td>
+            </tr>
+            <tr>
+              <td>04/28/2014</td>
+              <td>$224,300</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>02/19/2014</td>
+              <td>$194,360</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>07/18/2013</td>
+              <td>$199,000</td>
+              <td>ListingRemoved</td>
+              <td>Agent Provided</td>
+            </tr>
+            <tr>
+              <td>07/13/2013</td>
+              <td>$199,000</td>
+              <td>PriceChange</td>
+              <td>Agent Provide</td>
+            </tr>
+            <tr>
+              <td>03/22/2013</td>
+              <td>$235,000</td>
+              <td>Listed For Sale</td>
+              <td>Agent Provide</td>
+            </tr>
+            <tr>
+              <td>11/26/2003</td>
+              <td>$234,000</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>07/31/2000</td>
+              <td>$209,900</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>09/22/1995</td>
+              <td>$154,000</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>07/12/1994</td>
+              <td>$142,000</td>
+              <td>Sold</td>
+              <td>N/A</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- container div -->
+      </div>
+      <!-- new gerall div -->
+      <!-- intaier slider in the page----------------------------------->
+
+      <div class="swiper">
+        <h2>Similar Homes You May Like</h2>
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card1.jpg" /></div>
+
+            <div class="property-details">
+              <h4>$290,000</h4>
+              <h5>
+                99 Nome Way Unit C, <br />
+                Aurora, CO 80012
+              </h5>
+              <h6>KELLER WILLIAMS PARTNERS REALTY, MLS#3752949</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card2.jpg" /></div>
+            <div class="property-details">
+              <h4>$359,000</h4>
+              <h5>
+                141 Granby Way Unit A,<br />
+                Aurora, CO 80011
+              </h5>
+              <h6>INNOVATE COMMERCIAL REAL ESTATE LLC, MLS#7629240</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card3.jpg" /></div>
+            <div class="property-details">
+              <h4>$780,000</h4>
+              <h5>
+                21452 E 60th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>MODUS REAL ESTATE, MLS#6369268</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card4.jpg" /></div>
+            <div class="property-details">
+              <h4>$739,900</h4>
+              <h5>
+                8725 S Quemoy Street,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>KELLER WILLIAMS DTC, MLS#3472191</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card5.jpg" /></div>
+            <div class="property-details">
+              <h4>$483,990+</h4>
+              <h5>
+                Eldora Plan in The Aurora Highlands Summit Collection,<br />
+                Aurora, CO 80019
+              </h5>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card7.jpg" /></div>
+
+            <div class="property-details">
+              <h4>$422,000</h4>
+              <h5>
+                1165 Ironton Street,<br />
+                Aurora, CO 80010
+              </h5>
+              <h6>KR-1 INC, MLS#5719358</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card8.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21211 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#5330220</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21201 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#9635016</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card9.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21191 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#8093348</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card10.jpg" /></div>
+            <div class="property-details">
+              <h4>$550,000</h4>
+              <h5>
+                21955 E Lake Place,<br />
+                Aurora, CO 80015
+              </h5>
+              <h6>WILKS REAL ESTATE, MLS#4221979</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card11.jpg" /></div>
+            <div class="property-details">
+              <h4>$400,000</h4>
+              <h5>
+                22960 E Roxbury Drive Unit F,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>COMPASS - DENVER, MLS#2176120</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card12.jpg" /></div>
+            <div class="property-details">
+              <h4>$450,000</h4>
+              <h5>
+                12496 E Virginia Place,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>EXP REALTY, LLC, MLS#8692271</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$875,000</h4>
+              <h5>
+                6129 S Oak Hill Way,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>8Z REAL ESTATE, MLS#7855690</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card14.jpg" /></div>
+            <div class="property-details">
+              <h4>$270,000</h4>
+              <h5>
+                99 Nome Way Unit C,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>MEGASTAR REALTY, MLS#7316644</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$270,000</h4>
+              <h5>
+                99 Nome Way Unit C,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>MEGASTAR REALTY, MLS#7316644</h6>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- --------------------------next slider is start from here -->
+      <!-- intaier slider in the page----------------------------------->
+
+      <div class="swiper">
+        <h2>New Listings near 16293 E Mercer Circle</h2>
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card8.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21211 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#5330220</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card14.jpg" /></div>
+            <div class="property-details">
+              <h4>$270,000</h4>
+              <h5>
+                99 Nome Way Unit C,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>MEGASTAR REALTY, MLS#7316644</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$875,000</h4>
+              <h5>
+                6129 S Oak Hill Way,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>8Z REAL ESTATE, MLS#7855690</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card4.jpg" /></div>
+            <div class="property-details">
+              <h4>$739,900</h4>
+              <h5>
+                8725 S Quemoy Street,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>KELLER WILLIAMS DTC, MLS#3472191</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card5.jpg" /></div>
+            <div class="property-details">
+              <h4>$483,990+</h4>
+              <h5>
+                Eldora Plan in The Aurora Highlands Summit Collection,<br />
+                Aurora, CO 80019
+              </h5>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card7.jpg" /></div>
+
+            <div class="property-details">
+              <h4>$422,000</h4>
+              <h5>
+                1165 Ironton Street,<br />
+                Aurora, CO 80010
+              </h5>
+              <h6>KR-1 INC, MLS#5719358</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card2.jpg" /></div>
+            <div class="property-details">
+              <h4>$359,000</h4>
+              <h5>
+                141 Granby Way Unit A,<br />
+                Aurora, CO 80011
+              </h5>
+              <h6>INNOVATE COMMERCIAL REAL ESTATE LLC, MLS#7629240</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21201 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#9635016</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card9.jpg" /></div>
+            <div class="property-details">
+              <h4>$466,950</h4>
+              <h5>
+                21191 E 67th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>RICHMOND REALTY INC, MLS#8093348</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card10.jpg" /></div>
+            <div class="property-details">
+              <h4>$550,000</h4>
+              <h5>
+                21955 E Lake Place,<br />
+                Aurora, CO 80015
+              </h5>
+              <h6>WILKS REAL ESTATE, MLS#4221979</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card11.jpg" /></div>
+            <div class="property-details">
+              <h4>$400,000</h4>
+              <h5>
+                22960 E Roxbury Drive Unit F,<br />
+                Aurora, CO 80016
+              </h5>
+              <h6>COMPASS - DENVER, MLS#2176120</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card12.jpg" /></div>
+            <div class="property-details">
+              <h4>$450,000</h4>
+              <h5>
+                12496 E Virginia Place,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>EXP REALTY, LLC, MLS#8692271</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card3.jpg" /></div>
+            <div class="property-details">
+              <h4>$780,000</h4>
+              <h5>
+                21452 E 60th Avenue,<br />
+                Aurora, CO 80019
+              </h5>
+              <h6>MODUS REAL ESTATE, MLS#6369268</h6>
+            </div>
+          </div>
+
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card2.jpg" /></div>
+            <div class="property-details">
+              <h4>$359,000</h4>
+              <h5>
+                141 Granby Way Unit A,<br />
+                Aurora, CO 80011
+              </h5>
+              <h6>INNOVATE COMMERCIAL REAL ESTATE LLC, MLS#7629240</h6>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image"><img src="./img/card13.jpg" /></div>
+            <div class="property-details">
+              <h4>$270,000</h4>
+              <h5>
+                99 Nome Way Unit C,<br />
+                Aurora, CO 80012
+              </h5>
+              <h6>MEGASTAR REALTY, MLS#7316644</h6>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="taxe">
+        <h3>Property Taxes and Assessment</h3>
+        <table>
+          <tr>
+            <col />
+            <th>year</th>
+            <td>2023</td>
+            <col />
+            <th>Taxe</th>
+            <td>$2,075</td>
+            <col />
+            <th>Assessment</th>
+            <td>$592,900</td>
+          </tr>
+        </table>
+        <h5>Home facts updated by county records</h5>
+      </div>
+      <div class="price">
+        <h2>Price Trends</h2>
+        <p>For homes in 80013</p>
+        <div class="price-tend">
+          <h3>
+            <img src="./img/price-curve.png" class="price-image" /> $501,405
+          </h3>
+          <p>Median home value</p>
+          <p>This home: $549,000 9% above</p>
+        </div>
+        <p class="trend">Price trends provided by third party data sources.</p>
+      </div>
+      <!-- ----------------new google map and atable part start---------------- -->
+      <div class="comparable">
+        <h2>Comparable Sales for 16293 E Mercer Circle</h2>
+        <div id="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3072.264513257147!2d-104.80133672524826!3d39.64376120232391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c89aad328b3d3%3A0xcda7539f1e41538d!2s16293%20E%20Mercer%20Cir%2C%20Aurora%2C%20CO%2080013%2C%20USA!5e0!3m2!1sen!2s!4v1721212170074!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="Addresses">
+          <table id="table">
+            <tr>
+              <th>Address</th>
+              <th>Distance</th>
+              <th>Property Type</th>
+              <th>Sold Price</th>
+              <th>Sold Date</th>
+              <th>Bed</th>
+              <th>Bath</th>
+              <th>Sqft</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  16233 E Oxford Drive, Aurora, CO</a
+                >
+              </td>
+              <td>0.06</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$550,000</td>
+              <td>05/17/24</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2,240</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  16152 E Oxford Drive, Aurora, CO</a
+                >
+              </td>
+              <td>0.15</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$537,000</td>
+              <td>07/21/23</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2,240</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  16691 E Navarro Drive, Aurora, CO</a
+                >
+              </td>
+              <td>0.24</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$525,000</td>
+              <td>05/20/24</td>
+              <td>4</td>
+              <td>3</td>
+              <td>2,720</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  4090 S Nucla Way, Aurora, CO</a
+                >
+              </td>
+              <td>0.23</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$550,000</td>
+              <td>12/15/23</td>
+              <td>5</td>
+              <td>3</td>
+              <td>2,720</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  3941 S Joplin Way, Aurora, CO</a
+                >
+              </td>
+              <td>0.12</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$560,000</td>
+              <td>01/12/24</td>
+              <td>4</td>
+              <td>4</td>
+              <td>3,786</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  4142 S Lewiston Circle, Aurora, CO</a
+                >
+              </td>
+              <td>0.17</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$490,000</td>
+              <td>07/25/23</td>
+              <td>3</td>
+              <td>3</td>
+              <td>2,528</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  3931 S Joplin Way, Aurora, CO</a
+                >
+              </td>
+              <td>0.15</td>
+              <td>
+                Single-Family <br />
+                Home
+              </td>
+              <td>$635,000</td>
+              <td>04/17/24</td>
+              <td>4</td>
+              <td>4</td>
+              <td>3,454</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" style="color: green">
+                  15908 E Milan Drive, Aurora, CO</a
+                >
+              </td>
+              <td>0.30</td>
+              <td>Single-Family Home</td>
+              <td>$525,000</td>
+              <td>04/30/24</td>
+              <td>3</td>
+              <td>3</td>
+              <td>2,655</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- -------------------------code of Neighborhood ------------------->
+      <div class="Neighborhood">
+        <h2>Neighborhood Overview</h2>
+        <div class="card swiper-slide">
+          <div class="image"><img src="./img/small.jpg" /></div>
+          <div class="property-details">
+            <h4><a href="#" style="color: black">Mission Viejo</a></h4>
+            <h5>26 Homes For You</h5>
+            <h5>Buy: $354k - $575k</h5>
+            <h3>
+              <a href="#" style="color: rgb(0, 132, 0)">See Local Highlights</a>
+            </h3>
+          </div>
+        </div>
+        <p>Neighborhood stats provided by third party data sources.</p>
+      </div>
+      <!-- ---------------------------end fo nighborhood part--------------------- -->
+      <!-- ----------------- --start of new cards ection---------------------------->
+      <div class="locals">
+        <h2>What Locals Say about Mission Viej</h2>
+        <div class="btns">
+          <button class="bttn">All</button>
+          <button class="bttn" id="bttn">Dog owners</button>
+          <button class="bttn" id="bttn">Parents</button>
+          <button class="bttn" id="bttn">Commute</button>
+          <button class="bttn" id="bttn">Community</button>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- --------------start of first card--------------- -->
+            <div class="swiper-slide">
+              <div class="items">
+                <div class="next">
+                  <img src="./img/profile.jpg" alt="" />
+                  <h5>
+                    Trulia User <br />
+                    Resident. 1y ag
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "Great park to walk your dog. Sometimes there can be glass
+                    in the street. Lots of great places to walk. "
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of first card--------------------- -->
+            <!-- --------------start of second card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkgreen">
+                <div class="next">
+                  <img src="./img/profile.jpg" />
+                  <h5>
+                    Trulia User <br />
+                    Resident. 1y ag
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "Have lived here for a bit and I always feel safe even on
+                    late night walks after dinner. Neighbors are friendly and
+                    everyone takes part in keeping the neighborhood clean."
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of second card--------------------- -->
+            <!-- --------------start of Third card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkred">
+                <div class="next">
+                  <img src="./img/profile.jpg" />
+                  <h5>
+                    Trulia User
+                    <br />
+                    Resident .4y ago
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "Mission Viejo has a very diverse neighborhood. Beautiful
+                    open spaces and great schools. Definitely worth visitin
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of third card--------------------- -->
+            <!-- --------------start of fourth card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkgrey">
+                <div class="next">
+                  <img src="./img/profile.jpg" />
+                  <h5>
+                    Christine F. <br />
+                    Resident .4y ago
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "Great neighborhood, great schools, great park, relatively
+                    quiet, diverse. Our kiddo grew up in this neighborhood."
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of fourth card--------------------- -->
+            <!-- --------------start of fifth card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkblue">
+                <div class="next">
+                  <img src="./img/profile.jpg" />
+                  <h5>
+                    Brooke H. <br />
+                    Resident.5y ago
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "good place, great parks, good schools. street noise by
+                    mahor streets, but not bad on interior of neighborhood.
+                    overall not bad. "
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of fifth card--------------------- -->
+            <!-- --------------start of sixth card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: orangered">
+                <div class="next">
+                  <img src="./img/profile.jpg" alt="" />
+                  <h5>Jalesa R. <br />Resident.6y ago</h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "Mission Viejo is very unique because it offers many close
+                    locations for you to shop and eat at with easy walkable
+                    access. It also offers many choices for elementary
+                    education, and many choices for church."
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of sixth card--------------------- -->
+            <!-- --------------start of seventh card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkcyan">
+                <div class="next">
+                  <img src="./img/profile.jpg" alt="" />
+                  <h5>
+                    Jalesa R. <br />
+                    Resident.6y ago
+                  </h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "There are a lot of dogs everywhere but not many places for
+                    dogs to play free. Most places do offer nice-sized
+                    backyards, but the gates often aren't very secure due to
+                    them growing old over the years."
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of seventh card--------------------- -->
+            <!-- --------------start of eight card--------------- -->
+            <div class="swiper-slide">
+              <div class="items" style="background-color: darkgreen">
+                <div class="next">
+                  <img src="./img/profile.jpg" alt="" />
+                  <h5>Jalesa R. <br />Resident.6y ago</h5>
+                </div>
+                <div class="text">
+                  <h3>
+                    "More or less 10-20 minute commute, depending on the time of
+                    day and traffic. It really feels like it takes no time at
+                    all.
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- -----------------end of eignt card--------------------- -->
+            <!-- Add more slides as needed -->
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+      </div>
+      <!-- ------------------------------end of cards section------------------ -->
+
+      <div class="local-legal">
+        <div class="part1">
+          <div class="issue">
+            <h2>LGBTQ Local Legal Protections</h2>
+            <h5>
+              Under federal law, housing and employment discrimination based on
+              sexual
+            </h5>
+            <h5>
+              orientation and gender identity is unlawful. Learn More federal
+              legal protections
+            </h5>
+            <h5 class="sprit">
+              Do additional legal protections exist for the LGBTQ community at
+              the state level in Colorado?
+            </h5>
+          </div>
+          <div class="photo">
+            <img src="./img/LocalLegalProtectionV2.svg" class="legal" />
+          </div>
+        </div>
+        <div class="housings">
+          <!-- --------------start of first card------>
+          <div class="housing">
+            <h3>
+              <img src="./img/housing.jpg" width="18px" height="18px" /> Housing
+            </h3>
+            <div class="gender">
+              <h5>Gender Identity</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="orintation">
+              <h5>Sexual Orientation</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="small-text">
+              Including protection from being unfairly evicted, denied housing,
+              or refused the ability to rent or buy housing.
+            </div>
+          </div>
+          <!-- --------first card end------------- -->
+          <!-- -------start of second card-------- -->
+          <div class="housing">
+            <h3>
+              <img src="./img/Employment.jpg" width="18px" height="18px" />
+              Employment
+            </h3>
+            <div class="gender">
+              <h5>Gender Identity</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="orintation">
+              <h5>Sexual Orientation</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="small-text">
+              Including protection from being fired, denied employment, or
+              otherwise discriminated against by an employer.
+            </div>
+          </div>
+          <!-- -------end of second card---------- -->
+          <!-- -------start of Third card-------- -->
+          <div class="housing">
+            <h3>
+              <img src="./img/Public.jpg" width="18px" height="18px" /> Public
+              accommodations
+            </h3>
+            <div class="gender">
+              <h5>Gender Identity</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="orintation">
+              <h5>Sexual Orientation</h5>
+              <h5>Yes</h5>
+            </div>
+            <div class="small-text">
+              Including protection from being unfairly refused services or entry
+              to places accessible to the public (stores, restaurants, parks,
+              etc.).
+            </div>
+          </div>
+          <!-- -------end of Third card---------- -->
+        </div>
+      </div>
+      <!-- ---------------chart section start----------------------------------- -->
+      <div class="month-payment">
+        <h2>Affordability</h2>
+        <h3>
+          Calculate your monthly mortgage payments <br />
+          Your est. payment: $12,176/month*
+        </h3>
+      </div>
+
+      <div class="input-fiald">
+        <label for="loanAmount" class="Amount">Loan Amount:</label>
+        <input
+          type="number"
+          id="loanAmount"
+          value="300000"
+          min="0"
+          oninput="calculatePayment()"
+        />
+        <label for="interestRate" class="Amount">Interest Rate:</label>
+        <input
+          type="number"
+          id="interestRate"
+          value="5"
+          min="0"
+          max="20"
+          step="0.1"
+          oninput="calculatePayment()"
+        />
+        <label for="loanTerm" class="Amount">Loan Term (years):</label>
+        <input
+          type="number"
+          id="loanTerm"
+          value="30"
+          min="1"
+          max="50"
+          oninput="calculatePayment()"
+        />
+      </div>
+
+      <div class="chart">
+        <div class="convas">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="payment">
+          <div class="monthly-pay">
+            <div class="coll">
+              <div class="circles"></div>
+              <p>Monthly Payment:</p>
+            </div>
+            <div class="pay">
+              <span id="monthlyPayment"></span>
+            </div>
+          </div>
+          <div class="monthly-pay">
+            <div class="coll">
+              <div
+                class="circles"
+                style="background-color: rgb(234, 45, 199)"
+              ></div>
+              <p>Principal:</p>
+            </div>
+            <div class="prince">
+              <span id="principal"></span>
+            </div>
+          </div>
+          <div class="monthly-pay">
+            <div class="coll">
+              <div
+                class="circles"
+                style="background-color: rgb(140, 232, 48)"
+              ></div>
+              <p>Interest:</p>
+            </div>
+            <div class="intrest">
+              <span id="interest"></span>
+            </div>
+          </div>
+          <button class="qulifaid">Get Pre-Qualifid</button>
+        </div>
+      </div>
+      <div class="releted">
+        <p>
+          *Data used for estimated monthly cost is provided by Trulia, Zillow
+          Group Marketplace, Inc., and other third party sources.
+        </p>
+      </div>
+      <!-- --------------chart section End------------------------------------- -->
+      <!-- -----------------------start of new section contact an agent----------- -->
+      <div class="contact">
+        <h2>Contact an Agent</h2>
+        <button class="buttons">Schedular A Toure</button>
+        <button class="buttons">Request Info</button>
+      </div>
+      <!-- ----------collection div -->
+      <div class="collection">
+        <div class="collated">
+          <div class="photto">
+            <img src="./img/reqeuest.jpg" />
+            <h1>Request a tour at a time that works for you</h1>
+          </div>
+          <div class="schedul">
+            <h3>Tour Type</h3>
+            <div class="schedul-button">
+              <button class="in-button">In-Person</button>
+              <button class="in-button">Video Chat</button>
+            </div>
+            <div class="days">
+              <!-- new day -->
+              <div class="day">
+                <h4>sun</h4>
+                <h2>21</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>Mon</h4>
+                <h2>22</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>thu</h4>
+                <h2>23</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>Wen</h4>
+                <h2>24</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>ther</h4>
+                <h2>25</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>Fri</h4>
+                <h2>26</h2>
+                <h4>jul</h4>
+              </div>
+              <!-- new day -->
+              <div class="day">
+                <h4>sat</h4>
+                <h2>27</h2>
+                <h4>jul</h4>
+              </div>
+            </div>
+            <!-- end of days-->
+            <div class="fild-of-input">
+              <label for="time">Time</label>
+              <input type="time" />
+
+              <label for="phone">Phone</label>
+              <input type="number" />
+
+              <label for="Email">Email</label>
+              <input type="email" />
+            </div>
+            <div class="chack">
+              <input type="checkbox" />
+              <p>I want to talk about financing</p>
+            </div>
+            <button class="qulifaid">Schedul A Tour</button>
+          </div>
+        </div>
+        <div class="paragraph">
+          <h5>
+            By pressing Schedule a Tour, you agree that Trulia and real estate
+            professionals may contact you via phone/text about your inquiry,
+            which may involve the use of automated means. You are not required
+            to consent as a condition of purchasing any property, goods or
+            services. Message/data rates may apply. You also agree to our Terms
+            of Use Trulia does not endorse any real estate professionals
+          </h5>
+        </div>
+      </div>
+      <!-- -----------------------End of contact an agent section-------------->
+      <!-- ---------------------------final part of this approach------------->
+      <div class="listing">
+        <h2>Listing provided by</h2>
+        <h4 class="Ageent">
+          Audra Moyer, The Denver 100 LLC <br />Agent Phone: (303) 668-7299
+        </h4>
+        <p>
+          &copy; 2023 REcolorado® All rights reserved. Certain information
+          contained herein is derived from information which is the licensed
+          property of, and copyrighted by, REcolorado®
+          <a href="#" style="color: darkgreen"
+            >click her for more information</a
+          >
+        </p>
+        <p>
+          The listing broker’s offer of compensation is made only to
+          participants of the MLS where the listing is filed
+        </p>
+        <h4>Listing last modified: Jul 18, 2024 3:52</h4>
+      </div>
+      <div class="inforom">
+        <p>
+          16293 E Mercer Circle, Aurora, CO
+          <a href="#" style="color: darkgreen">80013</a> is a 4 bedroom, 3
+          bathroom, 2,616 sqft single-family home built in 1983. 16293 E Mercer
+          Circle is located in
+          <a href="#" style="color: darkgreen"> Mission Viejo</a>, Aurora. This
+          property is currently available for sale and was listed by REcolorado
+          on Jul 10, 2024. The MLS # for this home is MLS# 6958524.
+        </p>
+      </div>
+      <div class="real-estat">
+        <div class="gouid">
+          <h2>Nearby Real Estate</h2>
+          <a href="#">Townhomes for Sale Near Me</a>
+          <a href="#">Condos for Sale Near Me</a>
+          <a href="#">Houses for Sale Near Me</a>
+          <a href="#">See All</a>
+        </div>
+        <!-- -------------secon 0ne -->
+        <div class="gouid">
+          <h2>Nearby Zip Codes</h2>
+          <a href="#">80017 Homes for Sale</a>
+          <a href="#">80231 Homes for Sale</a>
+          <a href="#">80247 Homes for Sale</a>
+          <a href="#">See All</a>
+        </div>
+        <!-- ------------third one -->
+        <div class="gouid">
+          <h2>80013 Property Types</h2>
+          <a href="#">Co-Ops</a>
+          <a href="#"> Apartments</a>
+          <a href="#"> Mobile/Manufactured Homes</a>
+          <a href="#">See All</a>
+        </div>
+        <!-- -----------fourth one -->
+        <div class="gouid">
+          <h2>Nearby Real Estate</h2>
+          <a href="#">Townhomes for Sale Near Me</a>
+          <a href="#">Condos for Sale Near Me</a>
+          <a href="#">Houses for Sale Near Me</a>
+          <a href="#">See All</a>
+        </div>
+        <!-- -----------fifth one -->
+        <div class="gouid">
+          <h2>Real Estate Guides</h2>
+          <a href="#">Newest Rentals in Aurora, CO</a>
+          <a href="#">Newest Homes for Sale in Colorado</a>
+          <a href="#">Newest Rentals in Colorado</a>
+        </div>
+      </div>
+      <div class="inrix-link">
+        <p style="color: #777373">
+          Commute times provided by
+          <a href="#" style="color: darkgreen">INRIX</a> and
+          <a href="#" style="color: darkgreen">Transitland</a>. Commute times
+          are based on typical traffic conditions, not actual traffic, and will
+          not include activities such as a crash or construction in the commute
+          time calculation.
+        </p>
+      </div>
+      <div class="trulia">
+        <h5>
+          Trulia is a registered Trademark of Zillow, Inc. Zillow, Inc. holds
+          real estate brokerage <a href="#">licenses</a> in all 50 states and
+          D.C. and Zillow (Canada) Inc. holds real estate brokerage
+          <a href="#">licenses</a> in multiple provinces.
+        </h5>
+        <a href="#">§ 442-H New York Standard Operating Procedures</a><br />
+        <a href="#">New York Fair Housing Notice</a>
+        <h5>
+          TREC:
+          <a href="#"
+            >Information about brokerage services, Consumer protection notice</a
+          >
+          <br />
+          California DRE #1522444
+        </h5>
+        <a href="#">Contact Zillow, Inc Brokerage</a>
+      </div>
+      <div class="orderd-list">
+        <ul>
+          <li><a href="#">About Zillow Group&colon;</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Fair Housing Guide</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Careers</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Newsroom</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Investor Relations</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Advertising Terms</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Privacy</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Terms of Use</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Listings Quality Policy</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Subscription Terms</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Help</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Privacy Portal</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Cookie Preferenc</a></li>
+          <div class="circl"></div>
+          <li><a href="#">Do Not Sell or Share My Personal Information </a></li>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </ul>
+      </div>
+      <div class="zillow">
+        <p>
+          Zillow Group is committed to ensuring digital accessibility for
+          individuals with disabilities. We are continuously working to improve
+          the accessibility of our web experience for everyone, and we welcome
+          feedback and accommodation requests. If you wish to report an issue or
+          seek an accommodation, please
+          <a href="#" style="color: darkgreen">let us know</a>.
+        </p>
+      </div>
+      <div class="copy-right">
+        <p>
+          Copyright &copy; 2024 Trulia, LLC. All rights reserved. Equal Housing
+          Opportunity. Have a Question? Visit our Help Center to find the
+          answer.
+        </p>
+      </div>
+      <!-- ---------------------------final part of this approach------------->
+    </div>
+
+    <!-- ------------------------end fo slider ----------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./JavaScript/script.js"></script>
+  </body>
+</html>
